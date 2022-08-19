@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>8月16日随笔</title>
+    <url>/2022/08/16/8%E6%9C%8816%E6%97%A5%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<img src="https://" alt="" style="width:100%" /> 
+<p>昨天，赶在DDL之前，我交了作业（屎山），这个作业要了我半条老命。。</p>
+<p><strong>这种感觉很不好</strong></p>
+<p><font color=RED><strong>所以我想改变</strong></font></p>
+<p>看了知乎的帖子，发现讲的和我之前看的TED的演讲是一样的，不过文字信息更丰富</p>
+<p>我认清了自己内心的“猴子”和“理性人”，<strong>猛然回头我发现这十年来我一直被猴子支配着</strong></p>
+<p>这比我看的恐怖电影还恐怖！😱🙀</p>
+<p><strong>疲惫不堪的“理性人”要带领“猴子”远离“黑暗游乐场”</strong></p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>8月12日随笔</title>
     <url>/2022/08/12/8%E6%9C%8812%E6%97%A5%E9%9A%8F%E7%AC%94/</url>
     <content><![CDATA[<p>其实这两天状态不太好<br>
@@ -52,26 +74,9 @@
       </tags>
   </entry>
   <entry>
-    <title>8月16日随笔</title>
-    <url>/2022/08/16/8%E6%9C%8816%E6%97%A5%E9%9A%8F%E7%AC%94/</url>
-    <content><![CDATA[<img src="https://" alt="" style="width:100%" /> 
-<p>昨天，赶在DDL之前，我交了作业（屎山），这个作业要了我半条老命。。</p>
-<p><strong>这种感觉很不好</strong></p>
-<p><font color=RED><strong>所以我想改变</strong></font></p>
-<p>看了知乎的帖子，发现讲的和我之前看的TED的演讲是一样的，不过文字信息更丰富</p>
-<p>我认清了自己内心的“猴子”和“理性人”，<strong>猛然回头我发现这十年来我一直被猴子支配着</strong></p>
-<p>这比我看的恐怖电影还恐怖！😱🙀</p>
-<p><strong>疲惫不堪的“理性人”要带领“猴子”远离“黑暗游乐场”</strong></p>
-<span id="more"></span>
-<hr />
-版权信息
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
+    <title>c++学习Day1</title>
+    <url>/2022/08/05/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0Day1/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>8月6日随笔</title>
@@ -94,9 +99,26 @@
       </tags>
   </entry>
   <entry>
-    <title>c++学习Day1</title>
-    <url>/2022/08/05/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0Day1/</url>
-    <content><![CDATA[]]></content>
+    <title>Hello World</title>
+    <url>/2022/08/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>Tim</title>
@@ -140,24 +162,76 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/08/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>常用Hexo命令</title>
+    <url>/2022/08/05/%E5%B8%B8%E7%94%A8Hexo%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>只列出了一些常用命令，如需其他可查看手册<a href="https://hexo.io/zh-cn/docs/commands.html">指令 | Hexo</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">完整命令</th>
+<th style="text-align:center">简写命令</th>
+<th style="text-align:center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">hexo clean</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo generate</td>
+<td style="text-align:center">hexo g</td>
+<td style="text-align:center">生成静态文件</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo deploy</td>
+<td style="text-align:center">hexo d</td>
+<td style="text-align:center">部署网站</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo server</td>
+<td style="text-align:center">hexo s</td>
+<td style="text-align:center">启动服务器<br />网址http://localhost:4000/</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo new “xxx”</td>
+<td style="text-align:center">hexo n xxx</td>
+<td style="text-align:center">新建一篇名为xxx的文章</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo clean &amp;&amp; hexo g -d</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">一键部署</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo version</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">显示 Hexo 版本</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo list</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">列出网站资料</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo --safe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行</td>
+</tr>
+<tr>
+<td style="text-align:center">hexo --debug</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">在终端中显示调试信息并记录到 <code>debug.log</code></td>
+</tr>
+</tbody>
+</table>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
       <tags>
+        <tag>随笔</tag>
         <tag>Hexo</tag>
       </tags>
   </entry>
@@ -286,80 +360,6 @@
       </tags>
   </entry>
   <entry>
-    <title>常用Hexo命令</title>
-    <url>/2022/08/05/%E5%B8%B8%E7%94%A8Hexo%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>只列出了一些常用命令，如需其他可查看手册<a href="https://hexo.io/zh-cn/docs/commands.html">指令 | Hexo</a></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">完整命令</th>
-<th style="text-align:center">简写命令</th>
-<th style="text-align:center">功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">hexo clean</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo generate</td>
-<td style="text-align:center">hexo g</td>
-<td style="text-align:center">生成静态文件</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo deploy</td>
-<td style="text-align:center">hexo d</td>
-<td style="text-align:center">部署网站</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo server</td>
-<td style="text-align:center">hexo s</td>
-<td style="text-align:center">启动服务器<br />网址http://localhost:4000/</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo new “xxx”</td>
-<td style="text-align:center">hexo n xxx</td>
-<td style="text-align:center">新建一篇名为xxx的文章</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo clean &amp;&amp; hexo g -d</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">一键部署</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo version</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">显示 Hexo 版本</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo list</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">列出网站资料</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo --safe</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行</td>
-</tr>
-<tr>
-<td style="text-align:center">hexo --debug</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">在终端中显示调试信息并记录到 <code>debug.log</code></td>
-</tr>
-</tbody>
-</table>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>折腾了半天换背景。。。</title>
     <url>/2022/08/05/%E6%8A%98%E8%85%BE%E4%BA%86%E5%8D%8A%E5%A4%A9%E6%8D%A2%E8%83%8C%E6%99%AF%E3%80%82%E3%80%82%E3%80%82/</url>
     <content><![CDATA[<p>RT</p>
@@ -373,49 +373,6 @@
       <tags>
         <tag>随笔</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>收藏一下如何使用emoji</title>
-    <url>/2022/08/07/%E6%94%B6%E8%97%8F%E4%B8%80%E4%B8%8B%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8emoji/</url>
-    <content><![CDATA[<p><a href="https://dognew0126.github.io/2022/05/22/Hexo%E4%B8%AD%E4%BD%BF%E7%94%A8emoji%E8%A1%A8%E6%83%85/">Hexo中使用emoji表情 - dogNew’s Blog (dognew0126.github.io)</a></p>
-]]></content>
-      <categories>
-        <category>转载</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>转载</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>规划一下作业和论文</title>
-    <url>/2022/08/08/%E8%A7%84%E5%88%92%E4%B8%80%E4%B8%8B%E4%BD%9C%E4%B8%9A%E5%92%8C%E8%AE%BA%E6%96%87/</url>
-    <content><![CDATA[<img src="https://s1.ax1x.com/2022/08/05/vnDprR.jpg" alt="" style="width:100%" /> 
-<p>今天下雨了，还下冰雹了，放个闪电的图片吧</p>
-<p>总结了一下剩下的作业和论文开题的事，我是十分希望能够把它们仨串联在一起的，这样我能省一点时间</p>
-<span id="more"></span>
-<p>而且晓凡的作业15号就要交了，我掐指一算，时间紧迫，必须立马行动，所以我弄了个excel表格，把作业要求写在了上面，明天就要把论文题目定下来，然后就着手开始写了。</p>
-<blockquote>
-<p>凡事预则立，不预则废</p>
-</blockquote>
-<p>这一次我想提前一点（其实也不早了，再不弄就赶不上二路汽车了喂😓）</p>
-<p>我已经提前感受<em>xi‘ning</em>的感受了。。。</p>
-<p>这两天稍微有点浪了，我时刻提醒自己</p>
-<blockquote>
-<p>顺风也不能浪</p>
-</blockquote>
-<p>所以，我要积蓄力量，厚积薄发，对自己负责，对还未到来的未来负责</p>
-<p>加油！奥里给！😄😄😄</p>
-<hr />
-<p>版权信息</p>
-<p>文章为Woody原创，版权所有，侵权必究</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -557,6 +514,19 @@ git x64</p>
       </tags>
   </entry>
   <entry>
+    <title>收藏一下如何使用emoji</title>
+    <url>/2022/08/07/%E6%94%B6%E8%97%8F%E4%B8%80%E4%B8%8B%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8emoji/</url>
+    <content><![CDATA[<p><a href="https://dognew0126.github.io/2022/05/22/Hexo%E4%B8%AD%E4%BD%BF%E7%94%A8emoji%E8%A1%A8%E6%83%85/">Hexo中使用emoji表情 - dogNew’s Blog (dognew0126.github.io)</a></p>
+]]></content>
+      <categories>
+        <category>转载</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>转载</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>谁能想到。。。</title>
     <url>/2022/08/08/%E8%B0%81%E8%83%BD%E6%83%B3%E5%88%B0%E3%80%82%E3%80%82%E3%80%82/</url>
     <content><![CDATA[<p>哎<br>
@@ -569,6 +539,36 @@ git x64</p>
 <p>2.应该没了，就是问题1，小毛病不断，看来我真的要记笔记了，<strong>早立框架</strong>，现在有点感悟了</p>
 <hr />
 版权信息
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>规划一下作业和论文</title>
+    <url>/2022/08/08/%E8%A7%84%E5%88%92%E4%B8%80%E4%B8%8B%E4%BD%9C%E4%B8%9A%E5%92%8C%E8%AE%BA%E6%96%87/</url>
+    <content><![CDATA[<img src="https://s1.ax1x.com/2022/08/05/vnDprR.jpg" alt="" style="width:100%" /> 
+<p>今天下雨了，还下冰雹了，放个闪电的图片吧</p>
+<p>总结了一下剩下的作业和论文开题的事，我是十分希望能够把它们仨串联在一起的，这样我能省一点时间</p>
+<span id="more"></span>
+<p>而且晓凡的作业15号就要交了，我掐指一算，时间紧迫，必须立马行动，所以我弄了个excel表格，把作业要求写在了上面，明天就要把论文题目定下来，然后就着手开始写了。</p>
+<blockquote>
+<p>凡事预则立，不预则废</p>
+</blockquote>
+<p>这一次我想提前一点（其实也不早了，再不弄就赶不上二路汽车了喂😓）</p>
+<p>我已经提前感受<em>xi‘ning</em>的感受了。。。</p>
+<p>这两天稍微有点浪了，我时刻提醒自己</p>
+<blockquote>
+<p>顺风也不能浪</p>
+</blockquote>
+<p>所以，我要积蓄力量，厚积薄发，对自己负责，对还未到来的未来负责</p>
+<p>加油！奥里给！😄😄😄</p>
+<hr />
+<p>版权信息</p>
+<p>文章为Woody原创，版权所有，侵权必究</p>
 ]]></content>
       <categories>
         <category>随笔</category>
