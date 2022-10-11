@@ -145,7 +145,7 @@
     detectApple()
     })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Woody's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">python学习笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-05T12:54:21.000Z" title="发表于 2022-08-05 20:54:21">2022-08-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-09T08:51:36.526Z" title="更新于 2022-10-09 16:51:36">2022-10-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="python学习笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="嵩天-《python语言设计》"><strong>嵩天 《python语言设计》</strong></h2>
 <h1><u>==第一周==</u></h1>
-<h2 id="font-color-DarkYellow-8月5日-20-54-font"><font color=DarkYellow><strong>8月5日 20:54</strong></font></h2>
+<h2 id="font-color-DarkYellow-8月5日-20-54-font"><font color="DarkYellow"><strong>8月5日 20:54</strong></font></h2>
 <p>1.编译和解释</p>
 <p>编译是一次性执行全部源代码，后续不再需要源代码，时间久远会有源代码丢失的情况</p>
 <p>解释是逐条执行源代码，因此一直需要源代码，更便于维护</p>
@@ -201,7 +201,7 @@
 <p>命名规则：大小写字母、数字、下划线和汉字等字符及组合</p>
 <p>**注意事项：**大小写敏感，首字符不能是数字，不能与保留字相同</p>
 <p>保留字：被编程语言定义并保留使用的标识符，python共33个保留字</p>
-<h2 id="font-color-DarkYellow-8月7日-9-43更新-font"><font color=DarkYellow><strong>8月7日 9:43更新</strong></font></h2>
+<h2 id="font-color-DarkYellow-8月7日-9-43更新-font"><font color="DarkYellow"><strong>8月7日 9:43更新</strong></font></h2>
 <p>④<strong>数据类型</strong></p>
 <p>程序设计语言不允许存在语法歧义，需要定义数据的形式，如给10,011,101关联一种计算机可以理解的形式</p>
 <p>程序设计语言通过一定方式向计算机表达数据的形式，如&quot;123&quot;表示文本字符串123，123则表示数字123</p>
@@ -220,9 +220,9 @@
 <p>赋值语句：给变量赋予新的数据值，<strong>右侧的数据类型同时作用于变量</strong></p>
 <p>分支语句：如if TempStr[-1] in [‘F’,‘f’]: #如果条件为True则执行冒号后语句</p>
 <p><em><strong>注意：</strong></em>:的作用是如果中间的条件成立，那么则执行冒号后带有缩进的语句，反之跳过缩进的语句</p>
-<p>**函数：**根据输入参数产生不同输出的功能过程，采用<font color=Red>&lt;函数名&gt;(&lt;参数&gt;)</font>方式使用</p>
+<p>**函数：**根据输入参数产生不同输出的功能过程，采用<font color="Red">&lt;函数名&gt;(&lt;参数&gt;)</font>方式使用</p>
 <p>e.g. eval(TempStr[0:-1]) #TempStr[0:-1]是参数</p>
-<p><font color=Blue>eval()函数</font>，也叫评估函数，可以去掉参数最外侧引号并执行余下语句</p>
+<p><font color="Blue">eval()函数</font>，也叫评估函数，可以去掉参数最外侧引号并执行余下语句</p>
 <p>eval(&lt;字符串或字符串变量&gt;)</p>
 <p>e.g. eval(“1”) #输出结果是1  eval(“1+2”) #输出结果是3  eval(‘“1”’) #输出结果是‘1’</p>
 <p>eval('print(“Hello”) ') #输出结果是Hello</p>
@@ -230,10 +230,10 @@
 <p>输入函数input()，格式&lt;变量&gt; = input(&lt;提示信息字符串&gt;)</p>
 <p>用户输入的信息以字符串类型保存在&lt;变量&gt;中</p>
 <p>输出函数print()，格式print(&lt;拟输出字符串或字符串变量&gt;)</p>
-<p>此外，print函数的<font color=Red>格式化</font>：</p>
+<p>此外，print函数的<font color="Red">格式化</font>：</p>
 <p>e.g. print(“转换后的温度是{:.2f}C”.format©)</p>
 <p>{}表示槽，后续变量填充到槽中，{:.2f}表示将变量C填充到这个位置时取小数点后2位</p>
-<p><font color=Red><strong>考试</strong></font></p>
+<p><font color="Red"><strong>考试</strong></font></p>
 <p>第一周的内容学完之后我就开始自己练习，事实证明我的计算思维还真是差了一点，把python123的练习的弄的差不多了，我就开始考试了，信心满满</p>
 <p><img src="https://s1.ax1x.com/2022/08/05/vnDFIK.jpg" alt="先插入一张图片试试"></p>
 <p>考试内容是10道选择题和2道编程题，我本以为1小时绰绰有余，结果还是高估了自己</p>
@@ -249,7 +249,7 @@
 <p>说实话，这可给我难住了，我想了半天，搜索了半天也没啥想法，于是就想求助ZY，可惜考试时间到了他才回复，剩最后2分钟我突发奇想，一顿操作，还是不行，好在加法能工作，先贴上来，以后再看吧</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">str = input()</span><br><span class="line">if &quot;+&quot; in str:</span><br><span class="line">    a = str.index(&quot;+&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:a])+eval(str[a:])))</span><br><span class="line">elif &quot;-&quot; in str:</span><br><span class="line">    b = str.index(&quot;-&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:b])-eval(str[b:])))</span><br><span class="line">elif &quot;*&quot; in str:</span><br><span class="line">    c = str.index(&quot;*&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:c])*eval(str[c:])))</span><br><span class="line">else:</span><br><span class="line">    d = str.index(&quot;/&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:d])/eval(str[d:])))</span><br></pre></td></tr></table></figure>
 <p>吃饭的时候我都还在想这个问题，回来看了一眼答案</p>
-<p><font color=Red><strong>我人傻了</strong></font></p>
+<p><font color="Red"><strong>我人傻了</strong></font></p>
 <p>答案就2行😅😅😅</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = input()</span><br><span class="line">print(&quot;&#123;:.2f&#125;&quot;.format(eval(s)))</span><br></pre></td></tr></table></figure>
 <p>老师还加了一句，“<strong>体会eval()函数的作用，在编程中用处很大。</strong>”</p>
@@ -258,7 +258,7 @@
 <h1><u>==第二周==</u></h1>
 <p>复习了一下第一周的课，我理解的更深刻了一些，果然人类的本质就是复读机，只有不断重复才能做得更好</p>
 <blockquote>
-<p><font color=darkblue><em><strong>Practice makes perfect</strong></em></font></p>
+<p><font color="darkblue"><em><strong>Practice makes perfect</strong></em></font></p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#温度转换</span><br><span class="line">T=input()</span><br><span class="line">if T[-1] in (&#x27;f&#x27;,&#x27;F&#x27;):</span><br><span class="line">    print(&#x27;&#123;:.2f&#125;C&#x27;.format((eval(T[0:-1])-32)/1.8))</span><br><span class="line">elif T[-1] in (&#x27;c&#x27;,&#x27;C&#x27;):</span><br><span class="line">    print(&#x27;&#123;:.2f&#125;F&#x27;.format(eval(T[0:-1])*1.8+32))</span><br><span class="line">else:</span><br><span class="line">    print(&quot;格式有误&quot;)</span><br></pre></td></tr></table></figure>
 <p>我深入理解了一下{:.2f}的意思，首先必须放在引号里，相当于字符串，f是float，2f就是2位小数，.format()就是把()里的东西格式化成{:.2f}，因此像我这次写的格式也是可以的。注意字符串切片用:，eval的作用是去一层引号</p>
@@ -268,38 +268,38 @@
 <p>库library 包package 模块module</p>
 <p>2.turtle库的函数</p>
 <p>①窗体布局</p>
-<p>setup函数，<font color=orange>setup(width,height,startx,starty)</font>，后两个参数是可选的，未指定默认窗口在屏幕中心</p>
+<p>setup函数，<font color="orange">setup(width,height,startx,starty)</font>，后两个参数是可选的，未指定默认窗口在屏幕中心</p>
 <p>②空间坐标体系</p>
-<p><font color=red>绝对坐标：</font>以海龟为中心，参考平面直角坐标系，常用函数<font color=orange>goto(x,y)</font></p>
-<p><font color=darkred>海龟坐标</font>：以海龟为第一视角，常用函数fd(d)<font color=green>意思是forward</font>，bk(d)<font color=green>意思是backward</font></p>
-<p><font color=orange>circle(r,angle)</font>是以海龟左侧某个点为圆心绘制曲线，想起了<font color=green>曲率</font>。。</p>
+<p><font color="red">绝对坐标：</font>以海龟为中心，参考平面直角坐标系，常用函数<font color="orange">goto(x,y)</font></p>
+<p><font color="darkred">海龟坐标</font>：以海龟为第一视角，常用函数fd(d)<font color="green">意思是forward</font>，bk(d)<font color="green">意思是backward</font></p>
+<p><font color="orange">circle(r,angle)</font>是以海龟左侧某个点为圆心绘制曲线，想起了<font color="green">曲率</font>。。</p>
 <p>③角度坐标体系</p>
-<p><font color=red>绝对角度：</font>以海龟为中心，参考平面直角坐标系，常用函数<font color=orange>seth(angle)</font>，注：<font color=green>seth只改变方向不行进</font></p>
-<p><font color=darkred>海龟角度：</font>以海龟为第一视角，常用函数<font color=orange>left(angle)</font>，<font color=orange>right(angle)</font></p>
+<p><font color="red">绝对角度：</font>以海龟为中心，参考平面直角坐标系，常用函数<font color="orange">seth(angle)</font>，注：<font color="green">seth只改变方向不行进</font></p>
+<p><font color="darkred">海龟角度：</font>以海龟为第一视角，常用函数<font color="orange">left(angle)</font>，<font color="orange">right(angle)</font></p>
 <p>④RGB色彩模式</p>
 <p>默认采用小数值，可切换为整数值</p>
-<p><font color=orange>colormode(mode)</font>，colormode(1.0)表示小数值，colormode(255)表示整数值</p>
+<p><font color="orange">colormode(mode)</font>，colormode(1.0)表示小数值，colormode(255)表示整数值</p>
 <p>⑤画笔控制函数</p>
-<p><font color=orange>penup()</font>别名pu，抬起画笔</p>
-<p><font color=orange>pendown()</font>别名pd，落下画笔</p>
-<p><font color=orange>pensize(width)</font>别名width(width)，画笔宽度</p>
-<p><font color=orange>pencolor()</font>画笔颜色，有三种形式</p>
+<p><font color="orange">penup()</font>别名pu，抬起画笔</p>
+<p><font color="orange">pendown()</font>别名pd，落下画笔</p>
+<p><font color="orange">pensize(width)</font>别名width(width)，画笔宽度</p>
+<p><font color="orange">pencolor()</font>画笔颜色，有三种形式</p>
 <p>1)颜色字符串，注意小写，如turtle.pencolor(‘purple’)</p>
 <p>2)RGB小数值，如turtle.pencolor(0.63,0.13,0.94)</p>
-<p>3)RGB<font color=red>元组</font>值，如turtle.pencolor((0.63,0.13,0.94))</p>
+<p>3)RGB<font color="red">元组</font>值，如turtle.pencolor((0.63,0.13,0.94))</p>
 <p>⑥运动控制函数</p>
-<p><font color=orange>forward(d)</font>别名fd，d表示行进距离，单位是像素</p>
-<p><font color=orange>circle(r,extent=None)</font>，默认圆心在海龟<font color=red>左侧</font>距离为r的地方，不指定extent（<font color=red>角度</font>）默认绘制整圆</p>
-<p>注：若r为负值则向<font color=red>右侧</font>绘制圆</p>
-<p>⑦方向控制函数<font color=orange></font></p>
-<p><font color=orange>setheading(angle)</font>别名seth()，<font color=orange>left()</font>，<font color=orange>right()</font></p>
-<p>3.<strong><font color=red>库引用import的使用</font></strong></p>
-<p>①<font color=red>&lt;库名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)</font></p>
-<p>②每次都写库名很麻烦，可以<font color=red>from&lt;库名&gt;import&lt;函数名&gt;或者import*</font>，这样不需要每次都写库名了</p>
-<p><strong><font color=red>比较</font></strong></p>
+<p><font color="orange">forward(d)</font>别名fd，d表示行进距离，单位是像素</p>
+<p><font color="orange">circle(r,extent=None)</font>，默认圆心在海龟<font color="red">左侧</font>距离为r的地方，不指定extent（<font color="red">角度</font>）默认绘制整圆</p>
+<p>注：若r为负值则向<font color="red">右侧</font>绘制圆</p>
+<p>⑦方向控制函数<font color="orange"></font></p>
+<p><font color="orange">setheading(angle)</font>别名seth()，<font color="orange">left()</font>，<font color="orange">right()</font></p>
+<p>3.<strong><font color="red">库引用import的使用</font></strong></p>
+<p>①<font color="red">&lt;库名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)</font></p>
+<p>②每次都写库名很麻烦，可以<font color="red">from&lt;库名&gt;import&lt;函数名&gt;或者import*</font>，这样不需要每次都写库名了</p>
+<p><strong><font color="red">比较</font></strong></p>
 <p>方法①不会重名，方法②可能会（与自定义函数）重名</p>
-<p>③<font color=red>import&lt;库名&gt;as&lt;库别名&gt;</font>（小名）<strong><font color=lightblue>这个方法最好</font></strong></p>
-<p>4.<strong><font color=red>循环语句</font></strong></p>
+<p>③<font color="red">import&lt;库名&gt;as&lt;库别名&gt;</font>（小名）<strong><font color="lightblue">这个方法最好</font></strong></p>
+<p>4.<strong><font color="red">循环语句</font></strong></p>
 <p>for &lt;变量&gt; in range (&lt;参数&gt;)  参数就是循环的次数，变量表示循环计数（从0开始）</p>
 <p>​			&lt;被循环执行的语句&gt;</p>
 <p>range(M,N)，从M到N-1，产生N-M个整数</p>
@@ -316,32 +316,32 @@
 <p>④十六进制 以0X或0x开头，如-0x9a</p>
 <p>2.浮点数类型</p>
 <p><strong>有范围限制</strong>，可忽略</p>
-<p><font color=dark>浮点数运算存在不确定尾数，不是bug，是由于十进制和二进制不是完全对应引起的，如0.1会对应无限循环的二进制数</font>，于是就会出现这种情况</p>
+<p><font color="dark">浮点数运算存在不确定尾数，不是bug，是由于十进制和二进制不是完全对应引起的，如0.1会对应无限循环的二进制数</font>，于是就会出现这种情况</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0.1+0.2==0.3</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
-<p>此时可以使用<font color=orange>round(x,d)</font>函数，对x四舍五入，d是小数截取位数</p>
-<p>科学计数法：<font color=orange><a>e<b></font>表示a*10<sup>b</sup></p>
+<p>此时可以使用<font color="orange">round(x,d)</font>函数，对x四舍五入，d是小数截取位数</p>
+<p>科学计数法：<font color="orange"><a>e<b></b></a></font>表示a*10<sup>b</sup></p>
 <p>3.复数（python独有）</p>
-<p>虚数单位用**<font color=darkblue>j</font>**来表示，z.real表示实部，z.imag表示虚部</p>
+<p>虚数单位用**<font color="darkblue">j</font>**来表示，z.real表示实部，z.imag表示虚部</p>
 <p>4.数值运算操作符</p>
 <p>基本操作符：+，-，*，/，//，%，**</p>
-<p>二元操作符的增强操作符：x <font color=dark>op</font> y 其中，op为二元操作符</p>
+<p>二元操作符的增强操作符：x <font color="dark">op</font> y 其中，op为二元操作符</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x += y 	x -= y	x *= y	x /= y	x //= y	x %= y	x **= y</span><br></pre></td></tr></table></figure>
 <p><strong>混合运算会生成“最宽”的数据类型</strong></p>
 <p>5.数值运算函数</p>
-<p><font color=orange>abs(x)</font>对x取绝对值</p>
-<p><font color=orange>divmod(x,y)</font>商余，即同时输出商和余数(x//y,x%y)</p>
-<p><font color=orange>pow(x,y[,z])</font>幂余，(x**y)%z，函数中的[]表示可省略，<font color=dark>作用：计算更迅速</font></p>
-<p><font color=orange>round(x[,d])</font>默认取整</p>
-<p><font color=orange>max(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)</font></p>
-<p><font color=orange>min(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)</font></p>
+<p><font color="orange">abs(x)</font>对x取绝对值</p>
+<p><font color="orange">divmod(x,y)</font>商余，即同时输出商和余数(x//y,x%y)</p>
+<p><font color="orange">pow(x,y[,z])</font>幂余，(x**y)%z，函数中的[]表示可省略，<font color="dark">作用：计算更迅速</font></p>
+<p><font color="orange">round(x[,d])</font>默认取整</p>
+<p><font color="orange">max(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)</font></p>
+<p><font color="orange">min(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)</font></p>
 <p>数值转换函数</p>
-<p><font color=orange>int(x)</font></p>
-<p><font color=orange>float</font></p>
-<p><font color=orange>complex</font>，注：（）里是字符串也可</p>
+<p><font color="orange">int(x)</font></p>
+<p><font color="orange">float</font></p>
+<p><font color="orange">complex</font>，注：（）里是字符串也可</p>
 <p>例子：天天向上的力量</p>
 <blockquote>
-<p><strong><font color=darkblue>计算思维是抽象和自动化相结合的结果</font></strong></p>
-<p><strong><font color=darkblue>其中抽象是指抽象一个问题的形式化逻辑，自动化是指将抽象的结果通过程序自动完成</font></strong></p>
+<p><strong><font color="darkblue">计算思维是抽象和自动化相结合的结果</font></strong></p>
+<p><strong><font color="darkblue">其中抽象是指抽象一个问题的形式化逻辑，自动化是指将抽象的结果通过程序自动完成</font></strong></p>
 </blockquote>
 <p>6.字符串类型及操作</p>
 <p>2类共4种表示方法，<strong>注：多行字符串用’''或&quot;&quot;&quot;括起来，可以当作注释</strong></p>
@@ -349,54 +349,54 @@
 <p>序号：正向递增或反向递减</p>
 <p>①索引 格式：&lt;字符串&gt;[M]</p>
 <p>②切片 格式：&lt;字符串&gt;[M:N]</p>
-<p><font color=dark>高级用法：</font>&lt;字符串&gt;[M:N]，M缺失表示至开头，N缺失表示至结尾</p>
+<p><font color="dark">高级用法：</font>&lt;字符串&gt;[M:N]，M缺失表示至开头，N缺失表示至结尾</p>
 <p>如：“〇一二三四五六七八九十”[:3]结果是&quot;〇一二&quot;</p>
 <p>&lt;字符串&gt;[M:N:K]，以K为步长进行切片</p>
 <p>如：“〇一二三四五六七八九十”[1:8:2]结果是&quot;一三五七&quot;</p>
 <p>字符串逆序，用[::-1]来实现</p>
 <p>如：“〇一二三四五六七八九十”[::-1]结果是&quot;十九八七六五四三二一〇”</p>
-<p><font color=dark>转义符\反斜杠：</font>表达特定字符的本意</p>
+<p><font color="dark">转义符\反斜杠：</font>表达特定字符的本意</p>
 <p>常用的\b回退（一个位置），\r回车（光标移至本行首），\n换行（光标移至下行首）</p>
 <p>7.字符串操作符</p>
 <p>x + y 连接两个字符串</p>
 <p>n * x或x * n 复制n次字符串x</p>
 <p>x in s 如果x是s的子串，返回True，否则返回False</p>
 <p>8.字符串处理函数</p>
-<p><font color=orange>len(x)</font>，<font color=orange>str(x)</font>与eval(x)对应，<font color=orange>hex(x)</font>形成16进制字符串，<font color=orange>oct(x)</font>形成8进制字符串</p>
-<p><font color=orange>chr(u)</font>，u为Unicode编码，返回其对应的字符，<font color=orange>ord(x)</font>，x为字符，返回其对应的Unicode编码</p>
-<p>print函数中<font color=orange>end</font>的用法，end=&quot;&quot;引号为空，则输出后不换行，默认换行</p>
-<p>8.<font color=red>字符串处理方法</font></p>
-<p><font color=purple>”方法“在编程中是一个专有名词，特指<a>.<b>()风格中的函数<b>()</font>是面向对象编程中的特有方法</p>
+<p><font color="orange">len(x)</font>，<font color="orange">str(x)</font>与eval(x)对应，<font color="orange">hex(x)</font>形成16进制字符串，<font color="orange">oct(x)</font>形成8进制字符串</p>
+<p><font color="orange">chr(u)</font>，u为Unicode编码，返回其对应的字符，<font color="orange">ord(x)</font>，x为字符，返回其对应的Unicode编码</p>
+<p>print函数中<font color="orange">end</font>的用法，end=&quot;&quot;引号为空，则输出后不换行，默认换行</p>
+<p>8.<font color="red">字符串处理方法</font></p>
+<p><font color="purple">”方法“在编程中是一个专有名词，特指<a>.<b>()风格中的函数<b>()</b></b></a></font>是面向对象编程中的特有方法</p>
 <p>①一些以方法形式提供的字符串处理功能</p>
-<p><font color=orange>str.lower()</font>或<font color=orange>str.upper()</font>，返回字符串副本，全部小写/大写</p>
-<p><font color=orange>str.split(sep=None)</font>，返回一个列表，由str根据sep被分隔的部分组成<br>
+<p><font color="orange">str.lower()</font>或<font color="orange">str.upper()</font>，返回字符串副本，全部小写/大写</p>
+<p><font color="orange">str.split(sep=None)</font>，返回一个列表，由str根据sep被分隔的部分组成<br>
 如：“A,B,C”.split(“,”)结果为[‘A’,‘B’,‘C’]，即用,分割字符串形成列表</p>
-<p><font color=orange>str.count(sub)</font>，返回子串sub在str中出现的次数</p>
-<p><font color=orange>str.replace(old,new)</font>，返回字符串str副本，所有old子串被替换为new<br>
+<p><font color="orange">str.count(sub)</font>，返回子串sub在str中出现的次数</p>
+<p><font color="orange">str.replace(old,new)</font>，返回字符串str副本，所有old子串被替换为new<br>
 如：“python”.replace(“n”,“<a target="_blank" rel="noopener" href="http://n123.io">n123.io</a>”)结果为&quot;<a target="_blank" rel="noopener" href="http://python123.io">python123.io</a>&quot;</p>
-<p><font color=orange>str.center(width[,fillchar])</font>，字符串str根据宽度width居中，fillchar可选<br>
+<p><font color="orange">str.center(width[,fillchar])</font>，字符串str根据宽度width居中，fillchar可选<br>
 如：“python”.center(20,“=”)结果为=======python=======，左右各7个=</p>
-<p><font color=orange>str.strip(chars)</font>，从str中去掉在其左侧和右侧chars中列出的字符<br>
+<p><font color="orange">str.strip(chars)</font>，从str中去掉在其左侧和右侧chars中列出的字符<br>
 如：“=python=”.strip(“=npo”)结果为&quot;yth&quot;</p>
-<p><font color=orange>str.join(iter)</font>，在iter变量除最后元素外每个元素后增加一个str</p>
+<p><font color="orange">str.join(iter)</font>，在iter变量除最后元素外每个元素后增加一个str</p>
 <p>如：“,”.join(“12345”)结果为&quot;1,2,3,4,5&quot;，<strong>主要用于字符串分隔等</strong></p>
-<p>9.<font color=red>字符串类型的格式化</font></p>
-<p>使用<font color=orange>.format()方法</font>，<font color=orange>&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</font></p>
-<p>**<font color=purple>槽</font>**相当于一个占位信息符，使用{}来表示，<strong>只在字符串中有用</strong></p>
+<p>9.<font color="red">字符串类型的格式化</font></p>
+<p>使用<font color="orange">.format()方法</font>，<font color="orange">&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</font></p>
+<p>**<font color="purple">槽</font>**相当于一个占位信息符，使用{}来表示，<strong>只在字符串中有用</strong></p>
 <p>槽内部对格式化的配置方式：{&lt;参数序号&gt;:&lt;格式控制标记&gt;}</p>
 <p><strong>引导符号是”:“</strong>，6种格式控制标记分别是</p>
 <blockquote>
-<p><font color=dark>1)&lt;填充&gt;  2)&lt;对齐&gt;，&lt;左对齐，&gt;右对齐，^居中  3)&lt;宽度&gt;，槽设定的输出宽度</font></p>
-<p><font color=dark>4)&lt;,&gt;，数字的千位分隔符  5)&lt;.精度&gt;，浮点数小数精度或字符串最大输出长度</font></p>
-<p><font color=dark>6)&lt;类型&gt;，整数类型b,c,d,o,x,X,浮点数类型e,E,f,%</font></p>
+<p><font color="dark">1)&lt;填充&gt;  2)&lt;对齐&gt;，&lt;左对齐，&gt;右对齐，^居中  3)&lt;宽度&gt;，槽设定的输出宽度</font></p>
+<p><font color="dark">4)&lt;,&gt;，数字的千位分隔符  5)&lt;.精度&gt;，浮点数小数精度或字符串最大输出长度</font></p>
+<p><font color="dark">6)&lt;类型&gt;，整数类型b,c,d,o,x,X,浮点数类型e,E,f,%</font></p>
 </blockquote>
 <blockquote>
-<p><strong><font color=darkblue>填充、对齐、宽度3个一组</font></strong></p>
+<p><strong><font color="darkblue">填充、对齐、宽度3个一组</font></strong></p>
 <p>eg：“{0:=^20}”.format(“python”) #0可省略</p>
 <p>结果：=======python=======</p>
 </blockquote>
 <blockquote>
-<p><strong><font color=darkblue>后3个为一组，都和数字有关</font></strong></p>
+<p><strong><font color="darkblue">后3个为一组，都和数字有关</font></strong></p>
 <p>eg1：“{:,.2f}”.format(12345.6789)</p>
 <p>结果：12,345.68 #只分隔整数部分</p>
 <p>eg2：“{0:b},{0:c},{0:d},{0:o},{0:x},{0:X}”.format(425)</p>
@@ -406,13 +406,13 @@
 </blockquote>
 <p>10.time库的使用</p>
 <p>time库包含3类函数，分别是</p>
-<p>时间获取<font color=orange>time()</font>，获取时间戳。<font color=orange>ctime()</font>，获取字符串形式的当前时间。<font color=orange>gmtime()</font>，其他程序可利用的格式。</p>
-<p>时间格式化<font color=orange>strftime(tpl,ts)</font>，<font color=orange>strptime(str,tpl)</font>，两个函数是<font color=dark>互补</font>的关系</p>
+<p>时间获取<font color="orange">time()</font>，获取时间戳。<font color="orange">ctime()</font>，获取字符串形式的当前时间。<font color="orange">gmtime()</font>，其他程序可利用的格式。</p>
+<p>时间格式化<font color="orange">strftime(tpl,ts)</font>，<font color="orange">strptime(str,tpl)</font>，两个函数是<font color="dark">互补</font>的关系</p>
 <p>eg1：time.strftime(“%Y-%m-%d %H:%M:%S”,time.gmtime())   结果：2022-10-05 07:24:20</p>
 <p>eg2：</p>
 <p><strong>格式化字符串：</strong>%Y年；%m月份；%B月份名称；%b月份名称缩写；%d日期；%A星期；%a星期缩写； %H24小时制；%I12小时制；%p上午下午；%M分钟；%S秒。</p>
-<p>程序计时<font color=orange>sleep()</font>，产生时间，可用于程序休眠。</p>
-<p><font color=orange>perf_counter()</font>，测量时间但是起点不确定，连续调用，计算差值才有意义</p>
+<p>程序计时<font color="orange">sleep()</font>，产生时间，可用于程序休眠。</p>
+<p><font color="orange">perf_counter()</font>，测量时间但是起点不确定，连续调用，计算差值才有意义</p>
 <h1><u>==第四周==</u></h1>
 <p>程序的控制结构分为三种，分别是顺序结构、分支结构和循环结构</p>
 <p>1.分支结构</p>
@@ -425,22 +425,22 @@
 <p>注意：1）多条件之间的包含关系  2）变量取值范围的覆盖</p>
 <p>④条件判断及组合</p>
 <p>⑤异常处理</p>
-<p>基本用法：<font color=orange>try…except</font></p>
-<p>高级用法：<font color=orange>try&lt;语句块1&gt;except&lt;语句块2&gt;else&lt;语句块3&gt;finally&lt;语句块4&gt;</font></p>
+<p>基本用法：<font color="orange">try…except</font></p>
+<p>高级用法：<font color="orange">try&lt;语句块1&gt;except&lt;语句块2&gt;else&lt;语句块3&gt;finally&lt;语句块4&gt;</font></p>
 <p>首先执行try后的语句，若异常执行except；若不异常执行else，最后执行finally</p>
 <p>总结：</p>
-<p><font color=red>1)多分支条件之间的覆盖是重要问题 </font></p>
-<p><font color=red>2)程序可运行但不正确，要注意多分支<br>
+<p><font color="red">1)多分支条件之间的覆盖是重要问题 </font></p>
+<p><font color="red">2)程序可运行但不正确，要注意多分支<br>
 </font></p>
-<p><font color=red>3)分支结构是程序的重要框架，读程序先看分支</font></p>
+<p><font color="red">3)分支结构是程序的重要框架，读程序先看分支</font></p>
 <p>2.循环结构</p>
 <p>遍历循环for，无限循环while</p>
 <p>①遍历循环</p>
 <p>计数循环for in range 字符串循环for c in s 列表遍历循环for item in ls 文件遍历循环for line in fi(fi是文件标识符)</p>
 <p>②无限（条件）循环</p>
-<p>③循环控制保留字<font color=orange></font></p>
-<p><font color=orange>break</font>跳出并结束循环，执行循环后面的语句</p>
-<p><font color=orange>continue</font>结束当此循环，执行后续循环</p>
+<p>③循环控制保留字<font color="orange"></font></p>
+<p><font color="orange">break</font>跳出并结束循环，执行循环后面的语句</p>
+<p><font color="orange">continue</font>结束当此循环，执行后续循环</p>
 <p>④循环的高级用法</p>
 <p>在循环后加else语句，在循环不被break的情况下执行，若被break则不执行</p>
 <p>3.random库</p>
