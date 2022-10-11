@@ -236,130 +236,6 @@
       </tags>
   </entry>
   <entry>
-    <title>python学习笔记Day1</title>
-    <url>/2022/08/05/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0Day1/</url>
-    <content><![CDATA[<h2 id="嵩天-《python语言设计》"><strong>嵩天 《python语言设计》</strong></h2>
-<h1><u>==第一周==</u></h1>
-<h2 id="font-color-DarkYellow-8月5日-20-54-font"><font color=DarkYellow><strong>8月5日 20:54</strong></font></h2>
-<p>1.编译和解释</p>
-<p>编译是一次性执行全部源代码，后续不再需要源代码，时间久远会有源代码丢失的情况</p>
-<p>解释是逐条执行源代码，因此一直需要源代码，更便于维护</p>
-<p>2.程序的基本编写方法IPO</p>
-<p>Input Process Output</p>
-<p>输入是程序的开始</p>
-<p>输出是程序展示运算结果的方式，如果没有输出程序是没有意义的</p>
-<p>处理方法统称<strong>算法</strong>，是程序最重要的部分，也是程序的灵魂</p>
-<p>3.编程解决问题的步骤（6步骤）</p>
-<p>分析问题：分析问题的计算部分</p>
-<p>划分边界：划分问题的功能边界，规划IPO</p>
-<p>设计算法：设计问题求解的算法，关注问题本身</p>
-<p>编写程序：编程</p>
-<p>调试测试：调试程序使其正确运行</p>
-<p>升级维护：更新完善</p>
-<p><strong>精简步骤（3步）</strong></p>
-<p>确定IPO：明确计算部分和功能边界</p>
-<p>编写程序：将计算求解的设计变成现实</p>
-<p>调试程序：确保程序按照正确逻辑能够正确运行</p>
-<p>4.为什么要学习编程？</p>
-<p><strong>编程能够训练思维</strong></p>
-<p>①体现了一种抽象的交互关系、自动化执行的思维模式</p>
-<p>②计算思维：区别数学的逻辑思维和物理的实证思维的第三种思维模式</p>
-<p>③促进人类思考，增进观察力和深化对交互关系的理解</p>
-<p><strong>编程能够增进认识</strong></p>
-<p>①不单纯是求解计算问题</p>
-<p>②</p>
-<p><strong>编程能够带来乐趣</strong></p>
-<p><strong>==编程能够提高效率==</strong></p>
-<p><strong>编程可以带来就业机会</strong></p>
-<p>5.学习编程的误区</p>
-<p>编程很难学吗？掌握方法就很容易！</p>
-<p>首先，掌握编程语言的语法，熟悉基本概念和逻辑</p>
-<p>其次，结合计算问题思考程序结构，会使用编程套路</p>
-<p>最后，参照案例多练习多实践，学会举一反三</p>
-<p>6.python的两种编程方式</p>
-<p>交互式：通过IDLE（Integrated Development and Learning Environment）对每个输入语句即时运行结果，适合语法练习</p>
-<p>文件式：批量执行一组语句并运行结果，是编程的主要方式</p>
-<p>6.示例1：温度转换</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#TempConvert.py</span><br><span class="line">TempStr = input(&quot;请输入带有符号的温度值：&quot;)</span><br><span class="line">if TempStr[-1] in [&#x27;F&#x27;,&#x27;f&#x27;]:</span><br><span class="line">    C = (eval(TempStr[0:-1])-32)/1.8</span><br><span class="line">    print(&quot;转换后的温度是&#123;:.2f&#125;C&quot;.format(C))</span><br><span class="line">elif TempStr[-1] in [&#x27;C&#x27;,&#x27;c&#x27;]:</span><br><span class="line">    F = 1.8*eval(TempStr[0:-1])+32</span><br><span class="line">    print(&quot;转换后的温度是&#123;:.2f&#125;F&quot;.format(F))</span><br><span class="line">else:</span><br><span class="line">    print(&quot;输入格式错误&quot;)</span><br></pre></td></tr></table></figure>
-<p>①<strong>缩进</strong></p>
-<p>严格明确：缩进是语法的一部分，缩进不正确程序运行错误</p>
-<p>所属关系：表达代码间包含和层次关系的<strong>唯一</strong>手段</p>
-<p>长度一致：程序内一致即可，一般用4个空格或1个TAB，缩进长度需要一致</p>
-<p>②注释</p>
-<p>不被执行，提高程序可读性</p>
-<p>单行注释：#</p>
-<p>多行注释：‘’’    ‘’’</p>
-<p>③<strong>命名与保留字</strong></p>
-<p>变量：程序中用于保存和表示数据的占位符号，采用标识符来表示</p>
-<p>TempStr是变量名字</p>
-<p>命名：关联标识符的过程</p>
-<p>命名规则：大小写字母、数字、下划线和汉字等字符及组合</p>
-<p>**注意事项：**大小写敏感，首字符不能是数字，不能与保留字相同</p>
-<p>保留字：被编程语言定义并保留使用的标识符，python共33个保留字</p>
-<h2 id="font-color-DarkYellow-8月7日-9-43更新-font"><font color=DarkYellow><strong>8月7日 9:43更新</strong></font></h2>
-<p>④<strong>数据类型</strong></p>
-<p>程序设计语言不允许存在语法歧义，需要定义数据的形式，如给10,011,101关联一种计算机可以理解的形式</p>
-<p>程序设计语言通过一定方式向计算机表达数据的形式，如&quot;123&quot;表示文本字符串123，123则表示数字123</p>
-<p>1）字符串：用“”或者‘’都可以</p>
-<p>字符串的序号：正向递增序号（从0开始），反向递减序号（最大是-1）</p>
-<p>字符串的使用：</p>
-<p>​		索引：返回字符串中单个字符，形式是&lt;字符串&gt;[M]</p>
-<p>​		e.g. “请输入带有符号的温度值：”[0]或者TempStr[-1]</p>
-<p>​		切片：返回字符串中的一段字符子串，形式是&lt;字符串&gt;[M:N]</p>
-<p>​		e.g. “请输入带有符号的温度值：”[1:3]或者TempStr[-1]，不包含后面的</p>
-<p>2）数字类型：整数对应数学中的整数，浮点数对应实数（带有小数部分）</p>
-<p>3）列表：使用[]表示，用逗号,分隔各元素</p>
-<p>使用保留字in判断一个元素是否再列表中</p>
-<p>e.g. TempStr[-1] in [‘C’,‘c’] 判断前者是否与列表中的某个元素相同，相同则返回True</p>
-<p>⑤语句和函数：赋值语句，分支语句</p>
-<p>赋值语句：给变量赋予新的数据值，<strong>右侧的数据类型同时作用于变量</strong></p>
-<p>分支语句：如if TempStr[-1] in [‘F’,‘f’]: #如果条件为True则执行冒号后语句</p>
-<p><em><strong>注意：</strong></em>:的作用是如果中间的条件成立，那么则执行冒号后带有缩进的语句，反之跳过缩进的语句</p>
-<p>**函数：**根据输入参数产生不同输出的功能过程，采用<font color=Red>&lt;函数名&gt;(&lt;参数&gt;)</font>方式使用</p>
-<p>e.g. eval(TempStr[0:-1]) #TempStr[0:-1]是参数</p>
-<p><font color=Blue>eval()函数</font>，也叫评估函数，可以去掉参数最外侧引号并执行余下语句</p>
-<p>eval(&lt;字符串或字符串变量&gt;)</p>
-<p>e.g. eval(“1”) #输出结果是1  eval(“1+2”) #输出结果是3  eval(‘“1”’) #输出结果是‘1’</p>
-<p>eval('print(“Hello”) ') #输出结果是Hello</p>
-<p>⑥输入输出</p>
-<p>输入函数input()，格式&lt;变量&gt; = input(&lt;提示信息字符串&gt;)</p>
-<p>用户输入的信息以字符串类型保存在&lt;变量&gt;中</p>
-<p>输出函数print()，格式print(&lt;拟输出字符串或字符串变量&gt;)</p>
-<p>此外，print函数的<font color=Red>格式化</font>：</p>
-<p>e.g. print(“转换后的温度是{:.2f}C”.format©)</p>
-<p>{}表示槽，后续变量填充到槽中，{:.2f}表示将变量C填充到这个位置时取小数点后2位</p>
-<p><font color=Red><strong>考试</strong></font></p>
-<p>第一周的内容学完之后我就开始自己练习，事实证明我的计算思维还真是差了一点，把python123的练习的弄的差不多了，我就开始考试了，信心满满</p>
-<p><img src="https://s1.ax1x.com/2022/08/05/vnDFIK.jpg" alt="先插入一张图片试试"></p>
-<p>考试内容是10道选择题和2道编程题，我本以为1小时绰绰有余，结果还是高估了自己</p>
-<p>第一道题是**Hello World的条件输出 **</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">要求：</span><br><span class="line"></span><br><span class="line">获得用户输入的一个整数，参考该整数值，打印输出&quot;Hello World&quot;，要求：‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">如果输入值是0，直接输出&quot;Hello World&quot;‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">如果输入值大于0，以两个字符一行方式输出&quot;Hello World&quot;（空格也是字符）‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">如果输入值小于0，以垂直方式输出&quot;Hello World&quot;</span><br></pre></td></tr></table></figure>
-<p>两个字符一行确实难住我了，求教CSDN才懂，不过也确实学到了点东西，下面是我写的程序</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">num = input()</span><br><span class="line">str = &quot;Hello World&quot;</span><br><span class="line">length = len(str)</span><br><span class="line">if eval(num) == 0:</span><br><span class="line">    print(str)</span><br><span class="line">elif eval(num) &gt; 0:</span><br><span class="line">    for i in range(0,length,2):</span><br><span class="line">        print(str[i:i+2])</span><br><span class="line">else:</span><br><span class="line">    for i in str:</span><br><span class="line">       print(i)</span><br></pre></td></tr></table></figure>
-<p>这里用了一个len函数来求字符串的长度，然后用循环语句2个2个输出，确实挺高效的</p>
-<p>而老师给的代码就显得有点简单粗暴了</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">n = eval(input())</span><br><span class="line">if n == 0:</span><br><span class="line">    print(&quot;Hello World&quot;)</span><br><span class="line">elif n &gt; 0:</span><br><span class="line">    print(&quot;He\nll\no \nWo\nrl\nd&quot;)</span><br><span class="line">else:</span><br><span class="line">    for c in &quot;Hello World&quot;:</span><br><span class="line">        print(c)</span><br></pre></td></tr></table></figure>
-<p>第二道题是<strong>数值运算</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获得用户输入的一个字符串，格式如下：‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">M OP N‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">其中，M和N是任何数字，OP代表一种操作，表示为如下四种：+, -, *, /（加减乘除）‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">根据OP，输出M OP N的运算结果，统一保存小数点后2位。‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">注意：M和OP、OP和N之间可以存在多个空格，不考虑输入错误情况。</span><br></pre></td></tr></table></figure>
-<p>说实话，这可给我难住了，我想了半天，搜索了半天也没啥想法，于是就想求助ZY，可惜考试时间到了他才回复，剩最后2分钟我突发奇想，一顿操作，还是不行，好在加法能工作，先贴上来，以后再看吧</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">str = input()</span><br><span class="line">if &quot;+&quot; in str:</span><br><span class="line">    a = str.index(&quot;+&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:a])+eval(str[a:])))</span><br><span class="line">elif &quot;-&quot; in str:</span><br><span class="line">    b = str.index(&quot;-&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:b])-eval(str[b:])))</span><br><span class="line">elif &quot;*&quot; in str:</span><br><span class="line">    c = str.index(&quot;*&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:c])*eval(str[c:])))</span><br><span class="line">else:</span><br><span class="line">    d = str.index(&quot;/&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:d])/eval(str[d:])))</span><br></pre></td></tr></table></figure>
-<p>吃饭的时候我都还在想这个问题，回来看了一眼答案</p>
-<p><font color=Red><strong>我人傻了</strong></font></p>
-<p>答案就2行😅😅😅</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s = input()</span><br><span class="line">print(&quot;&#123;:.2f&#125;&quot;.format(eval(s)))</span><br></pre></td></tr></table></figure>
-<p>老师还加了一句，“<strong>体会eval()函数的作用，在编程中用处很大。</strong>”</p>
-<p>现在确实体会到了，作用确实很大。。。</p>
-<p>今天先这样，明天继续</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>折腾了半天换背景。。。</title>
     <url>/2022/08/05/%E6%8A%98%E8%85%BE%E4%BA%86%E5%8D%8A%E5%A4%A9%E6%8D%A2%E8%83%8C%E6%99%AF%E3%80%82%E3%80%82%E3%80%82/</url>
     <content><![CDATA[<p>RT</p>
@@ -589,6 +465,906 @@ git x64</p>
       <tags>
         <tag>学习</tag>
         <tag>Typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8月31日随笔</title>
+    <url>/2022/08/31/8%E6%9C%8831%E6%97%A5%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>结构不良问题：指<strong>没有明确的结构或者解决途径</strong>的问题</p>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>10月2日随笔</title>
+    <url>/2022/10/02/10%E6%9C%882%E6%97%A5%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>有点慌，因为****了</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月10日随笔</title>
+    <url>/2022/09/11/9%E6%9C%8810%E6%97%A5%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>昨天睡到7点多就醒了，但是还是赖床了，9点才起</p>
+<p>上午也没干什么，刷了刷抖音，重新下载了三体，看了一会</p>
+<p>中午去食堂吃了饭，然后回来睡觉了</p>
+<p>下午3点多醒了，给爸妈打了电话聊了一会</p>
+<p>晚上出去吃了拉面，然后约秋哥去拍月亮</p>
+<p>可惜相机放K中了，所以看着他拍，又搞了延时摄影，挺有意思</p>
+<p>秋哥设置的6s拍一张，拍了不到30分钟，最后出来的视频才3s</p>
+<p>不过确实挺有意思，不白被蚊子咬</p>
+<p>回来吃了冰淇淋，然后洗洗睡了</p>
+<p>感觉头脑清醒了一些，希望继续保持这个状态</p>
+<p>晚上睡觉前买了个三脚架，反正以后也会用的</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月11日随笔</title>
+    <url>/2022/09/11/9%E6%9C%8811%E6%97%A5%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>早上快9点才起，虽然7点多就醒了</p>
+<p>起来洗漱一下，和秋哥和他室友一起去吃早茶</p>
+<p>味道还不错，不过秋哥执意要请客😄，下次请回来吧</p>
+<p>想到要买个快门线，以后拍拍慢门和b门，应该会挺有意思的</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月12日随笔</title>
+    <url>/2022/09/14/9%E6%9C%8812%E6%97%A5%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>白天也没做什么，一直在休息，刷dy</p>
+<p>哦对了，下午4点的时候老师把我们叫过去了，讨论内容的事</p>
+<p>说实话还是挺难想的，不过再不想论文就做不完了😭</p>
+<p>晚上睡觉的时候我想：时间都去哪了？</p>
+<p>后来知道了</p>
+<p>时间都被dy偷走了</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月13日实习日记</title>
+    <url>/2022/09/14/9%E6%9C%8813%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>今天早上7点起床，坐车去K中，这次带了很多的东西，因为我不想回来了</p>
+<p>上午帮L老师搞了一下登记名单的事，不得不说，乐色系统害人</p>
+<p>然后Li老师又安排我去解决一下电脑上不了网的问题</p>
+<blockquote>
+<p>问题描述：</p>
+<p>电脑能上网，但是经常掉线，也就是时而能上时而不能上</p>
+<p>我的解决办法：</p>
+<p>ping 192.168.0.1不通，我以为是电脑没连上网</p>
+<p>结果是<strong>网段</strong>的问题，因为学校是用固定ip的（后来也有自动的）不同年级用不同的网段，把网段改了一下就好了，如把192.168.0.1改为192.168.5.1</p>
+</blockquote>
+<p>好好学学怎么搞定<font color=RED><strong>断网</strong></font>的问题，以后有用</p>
+<p>ping指令参考</p>
+<blockquote>
+<p><a href="https://blog.csdn.net/qq_51562406/article/details/121089286">ping命令使用集合_一张白纸白又白的博客-CSDN博客_ping的常用命令</a></p>
+</blockquote>
+<p>晚上去拍了月亮和车流</p>
+<p>拍月亮，我觉得还是需要一个更长的镜头，不过以后再买吧（穷😭</p>
+<p>拍车流，用慢门拍摄，我没有快门线，就用的三脚架+慢门，效果还可以</p>
+<p><font color=RED><strong>新知识：</strong></font>手动对焦可以拍出一些不一样的效果，挺好</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月14日实习日记</title>
+    <url>/2022/09/14/9%E6%9C%8814%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>昨晚折腾HC的电脑，没整明白</p>
+<p>今天Li老师来了就整明白了，看来还是要多跟老教师学习经验，<font color=GREY>不能太自负</font></p>
+<p>联想品牌机按F1进BIOS，按F12选择启动顺序</p>
+<blockquote>
+<p>问题描述：电脑密码忘记，不想重装系统</p>
+<p>Li老师：进PE（用的老毛桃），有个密码修改，点击即可修改</p>
+<p><strong>神奇！</strong>，我以前没接触过这种，看来还是学艺不精啊</p>
+</blockquote>
+<p>不过还有几个小问题</p>
+<blockquote>
+<p><strong>小问题0：</strong></p>
+<p>账户无法删除</p>
+<p>解决办法：要先注销要删除的账户，CTRL + ALT +DELETE或者在开始那里点击用户头像，注销要删除的账户，再进入另一个账户即可删除</p>
+</blockquote>
+<blockquote>
+<p><strong>小问题1：</strong></p>
+<p>电脑每次都要按CTRL + ALT +DELETE才能解锁</p>
+<p>解决办法：win+R进入组策略gpedit.msc，有个交互式xx，可以修改</p>
+</blockquote>
+<blockquote>
+<p><strong>小问题2：</strong></p>
+<p>电脑无法取消密码，只能设置更长或者更复杂的密码</p>
+<p>解决办法：尝试使用win+R进入control userpasswords2取消密码，显示取消成功，实际还有密码</p>
+<p>Li老师：因为系统是zf定制的神州xx版，所以必须设置密码，目前无解</p>
+</blockquote>
+<hr>
+<p>中午吃了好多脆骨，然后回去午休了，打算下午找T主任</p>
+<p>下午电视台来采访，我们跟着学生一起去了创客空间，玩了一会</p>
+<p>然后我们找T主任讨论兴趣班的事情</p>
+<p>简单讲了我们的想法，T主任还是很支持我们的，我们提的要求他都能满足</p>
+<p>他说让我们<strong>多听课，少干杂事</strong></p>
+<p>然后他叫来了C老师来商量一下兴趣班的事情</p>
+<p>C老师心直口快，直接指出了我们的问题</p>
+<blockquote>
+<p>既要搞信息技术课、人工智能课（可能还有C老师的校本课程：智能编程）</p>
+<p>又要当班主任，每天和学生打交道</p>
+<p>还要搞数学兴趣班，每周听课、备课</p>
+</blockquote>
+<p>一个人的能力和时间是有限的，不可能做那么多事情</p>
+<p>我承认，这是我一直以来的想法（全都要），而当别人直接的指出这个问题的时候</p>
+<p><strong><font color=red>我还是有些难以接受</font></strong></p>
+<p>是的，我不能做所有的事情，所以我必须有所取舍</p>
+<p>我有点上火了，陷入了思考</p>
+<p>晚上，修电脑的事情又来了，Li老师要我们装一台新电脑</p>
+<p>我解决了电脑必须设置密码和用微软账户登录的问题</p>
+<blockquote>
+<p>问题：win11如何跳过联网激活？</p>
+<p>解决办法：①CTRL + SHIFT +F3，无效</p>
+<p>②SHIFT +F10调出命令提示符，输入OOBE\BYPASSNRO，即可跳过</p>
+</blockquote>
+<p>今天写了好多，还要想改题目的事，就写到这吧</p>
+<p>晚上和阿伟聊了一下，目前的想法是</p>
+<p>1.跟着C老师做AI，尽量扩招点人，用这个搞论文、找工作都好</p>
+<p>2.联系别的数学老师，我们做材料，老师上课</p>
+<p>快10点联系了LN老师，等了半天终于回复了，看来有戏，明天好好聊聊，希望能够说服她</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月20日实习日记</title>
+    <url>/2022/09/20/9%E6%9C%8820%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>这周状态不太好，需要继续调整</p>
+<p>上周日感冒了，昨天很严重，好在泡了脚出了点汗，今天好了点，已经在康复的路上了</p>
+<p>昨天和Lei哥聊了一下，发现硬件还是要捡起来</p>
+<p>一直想要用python解决一个问题，也没解决得了，麻烦ZY帮忙编了一个程序，能用上</p>
+<p>今天和Li老师聊了，她不想帮忙教课，也正常，不过未来的路就更难了点</p>
+<p>我要拉下脸去问H老师和D老师了，不过也是没办法的事</p>
+<p>同学们都在忙着投简历，我简历确实也没啥写的，哎</p>
+<blockquote>
+<p>wps中插入GGB课件</p>
+<p>1.<a href="https://www.ggb123.cn/wps/%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">https://www.ggb123.cn/wps/安装插件</a></p>
+<p>2.打开ppt，登录账号</p>
+<p>3.可以选择本地或网络的ggb课件</p>
+</blockquote>
+<p>**明天的任务：**搞定几何画板和GGB中的热文本使用问题</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>GGB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月22日实习日记</title>
+    <url>/2022/09/22/9%E6%9C%8822%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>昨天办公室空调有点冷，晚上睡觉空调也挺冷，导致我康复的没想象中快</p>
+<p>主要还是因为降温了</p>
+<p>总结一下这两天遇到的电脑问题</p>
+<blockquote>
+<p>问题1：电脑能开机（或不能），显示器显示无信号</p>
+<p>解决办法：其实也不算解决办法，我猜想是因为固态硬盘掉盘的事（开不了机），但是能开机的也无信号我就有点懵了，今天又遇到了这种情况，知乎了一下，大概率是内存条的问题，下次再遇到的时候擦一擦吧</p>
+</blockquote>
+<blockquote>
+<p>问题2：打印机无法打印，测试页也不行</p>
+<p>解决办法：网络打印机，删除又重新添加了也不行。在设备那里更新一下驱动就好了，具体原因未知。</p>
+</blockquote>
+<p>这两天做了2个GGB的课件，确实有点费劲，好在效果还不错，满足了我较高的要求</p>
+<p>明天把剩下几个稍微简单点的做一下，还要写一下教案学案，以及论文的前测卷、访谈提纲、问卷</p>
+<p>而且还要备课，要把教案给老师看看，事情还挺多。。</p>
+<p>最近感觉效率不是很高，我想达到MAX的效率，还是有点难，不过时不我待，及时调整状态吧</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>GGB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月23日实习日记</title>
+    <url>/2022/09/23/9%E6%9C%8823%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>今天修改了一下GGB课件，把低清图换成了矢量图，还是阿伟用islide下载的</p>
+<p>然后又制作了一个课件，目前做好了3个，在做第四个</p>
+<p>上午又去听课了，现在打算每天都听课，最好多于2节</p>
+<p>下午在做课件，来了个大活，装电脑</p>
+<p>虽然我看了好多装机视频，但是<strong>纸上得来终觉浅啊</strong></p>
+<p><strong><font color=Red>今日收获：要有意义的学习，颈部以上的学习</font></strong></p>
+<p>虽然以前就意识到了，但是我觉得还不够，我要每天提醒自己</p>
+<p>装完机发现U盘里的系统镜像被我删了，又重新装了个启动盘</p>
+<p>不得不说，<font color=Blue><strong>微PE工具箱</strong></font>真的很简洁好用！</p>
+<p>装系统、激活、简单设置，这些步骤很容易，一会就搞定了</p>
+<p>我回来以后把U盘“武装”了一下，下次遇到类似的问题会解决的更好</p>
+<p>记录今天的装机过程吧</p>
+<p>我们首先装的主板，然后装的CPU、风扇、固态、内存、显卡，然后装的电源，实际上流程可以优化一下</p>
+<p>**预备工具：**十字螺丝刀（带磁力的）</p>
+<blockquote>
+<p><font color=red><strong>装机过程</strong></font></p>
+<p>想起来了，应该是先把东西装到主板上，再把主板放上去，连接电源，再装显卡</p>
+<p>1.<font color=red>装CPU</font></p>
+<p>①intel的CPU有个角有🔺，将CPU和🔺对应放置</p>
+<p>②AMD的安装也类似</p>
+<p>2.<font color=red>装CPU散热器</font></p>
+<p>intel的散热器，垂直放置在CPU上方，四个脚对应四个孔位，<strong>按压即可</strong>，最好对角线按压</p>
+<p>把CPU风扇电源插到主板上，<strong>绕线</strong>更美观，一般是CPU_FAN</p>
+<p>3.安装内存、固态硬盘</p>
+<p>如果内存插槽有4个，那么1.3和2.4分别是双通道</p>
+<p>固态硬盘方面，最好先把散热片安装上，再装到主板上</p>
+<p>4.<font color=red>装主板</font></p>
+<p>首先安装主板的I/O挡板，<strong>要从机箱内向外装</strong>，固定主板</p>
+<p>5.安装机箱风扇，skipped</p>
+<p><strong>摘自知乎</strong></p>
+<p>1个风扇的时候，安装机箱后方出风风扇效果最佳，尤其是CPU温度，降低最为明显。</p>
+<p>2个风扇的时候，安装1个后方出风风扇和1个前方进风风扇，降温最明显，达到了不错的散热效果，前吸冷风后排热风。</p>
+<p>3个风扇的时候，安装1个后方出风风扇和2个前方进风风扇，降温效果最佳。</p>
+<p>4个风扇的时候，安装1个后方出风风扇和2个前方进风风扇以及1个上方出风风扇，相比3个风扇（前2后1）的时候降温幅度已经很小了。</p>
+<p>5个风扇的时候，就是在机箱底部增加了一个风扇，对CPU温度几乎没有影响，但是能够稍微降低了显卡的温度，只有1-2度。</p>
+<p>在主板上的标志一般是CHA_FAN或者SYS_FAN</p>
+<p>6.<font color=red>装电源</font></p>
+<p>这款机箱是下置电源的，电源的风扇是朝下的，固定电源</p>
+<p>7.<font color=red>装机械硬盘</font></p>
+<p>分别连接主板的SATA数据接口和电源上的<strong>长L型电源接口</strong>，固定硬盘</p>
+<p>8.<font color=red>装机箱前置跳线</font></p>
+<p>将机箱前置的USB线插入主板上的USB 3.0标志的接口上，或USB标志的接口上</p>
+<p>接前置音频跳线，主板上一般是HD_AUDIO</p>
+<p><font color=red><strong>下面是重点</strong></font></p>
+<p>POWER SW：机箱开关机按键；<font color=red>接线：</font><strong>+3 -4</strong><br>
+SW，我猜想是switch的意思</p>
+<p>RESET SW：机箱重启按键；<font color=red>接线：</font><strong>+7 -8</strong></p>
+<p>Power LED：电源指示灯；<font color=red>接线：</font><strong>+1</strong> <strong>-2</strong></p>
+<p>HDD LED：硬盘指示灯；<font color=red>接线：</font><strong>+5 -6</strong></p>
+<p>线上面都有文字，对照着插入主板即可</p>
+<p><strong>1234</strong> 大概这么个示意图</p>
+<p><strong>5678</strong></p>
+<p>9.<font color=red>装电源线</font></p>
+<p>主板24pin电源线、显卡PCI-E电源线、CPU8pin电源线（也可能是4pin）</p>
+<p>可能是我们装的这台电脑主板太小，装电源线的时候挺费劲的</p>
+</blockquote>
+<p>今天大概就这样了</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习 GGB</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>GGB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月26日实习日记</title>
+    <url>/2022/09/26/9%E6%9C%8826%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>浑浑噩噩的过完了周末，今天又是周一了</p>
+<p>其实也不算什么都没做，做完了GGB尺规作图的课件并且优化了，效果已经可以了</p>
+<p>简单总结一下吧</p>
+<blockquote>
+<p>GGB中curve（曲线）的用法</p>
+<p>我是用curve命令绘制圆弧，其实就是参数方程，确实挺方便的</p>
+<p>又用了滑动条和按钮的搭配，按钮指令用的确实挺熟了，粘过来一段代码吧</p>
+</blockquote>
+<p>基本上是第一个按钮的代码了</p>
+<blockquote>
+<p>n=1</p>
+<p>bool1=!bool1</p>
+<p>StartAnimation(G,bool1)</p>
+<p>SetTrace(G,bool1)</p>
+<p>SetCaption(button1,If(bool1,“暂停”,“第一步”))</p>
+<p>StartAnimation和SetTrace指令我一般是搭配使用的，启动动画和跟踪点的轨迹</p>
+<p>用布尔量设置标题SetCaption确实也很好用</p>
+</blockquote>
+<p>今天聊天聊到考编的事，比我想象中要更难一点，而且我志不在现在这个专业</p>
+<p>未来我是一定会再深造的，我的目标可是5+5年高级，深造是要花钱的，未来过日子也是要花钱的</p>
+<p>所以</p>
+<blockquote>
+<p>Plan A 留在SZ，找不限专业的学校（少），继续深造、赚钱和评职称</p>
+<p>Plan B 回到老家，找不限专业的学校（也不多），继续深造和评职称，工资能不能发下来都不好说</p>
+</blockquote>
+<p>确实到了该纠结一下的时候了</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+        <tag>GGB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实习日记9.5</title>
+    <url>/2022/09/06/9%E6%9C%885%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>这是昨天的日记</p>
+<p>昨天上午打车来到K中学，上车就晕车了，闭眼眯了一路</p>
+<p>下车一问同学，他不晕车的人也晕了</p>
+<p>严重怀疑是车的问题，再也不坐AION了</p>
+<p>下车来到T主任办公室，主任开门见山问我们会不会物理</p>
+<p>我俩没搭茬，因为不会，不过知道了K中学缺物理老师</p>
+<p>接着主任叫来L老师，又跟我们交代了一些事情，我们就跟着L老师走了</p>
+<p>L老师很热情，按我同学的说法，有一种北方妇女的热情，不过她是安徽人</p>
+<p>L老师带我们跑东跑西，领宿舍钥匙、办饭卡、找老师录人脸、给我们指路。。。</p>
+<p>让我俩感受到了家？的温暖</p>
+<p>&lt;------分割线------&gt;</p>
+<p>来到宿舍傻眼了，里面的灰像是多年积攒下来的，跟我的悲伤厚厚一叠</p>
+<p>给我的感觉就是</p>
+<p><strong>流浪汉来了都要考虑一下住不住</strong></p>
+<p>我俩都低估了房间的污浊</p>
+<p>于是我们决定先吃饭，下午出去买点清洁用品</p>
+<p>吃过饭，我开始拖地，基本拖一下，拖把就黑了😓</p>
+<p>拖了俩小时，我不弄了，累了，一看时间快做核酸了</p>
+<p>做完核酸，录完人脸，<strong>来活了</strong></p>
+<p>L老师让我们去给两个老师看看电脑问题</p>
+<p>我们去了，我一看，开不开机，百度一下，说主板坏了😓</p>
+<p>于是我说我先拿回去修一下，回来检查了一下主板，看不出问题，用橡皮擦了一下内存条，好了</p>
+<p>于是我得出结论</p>
+<blockquote>
+<p>水一百度会开</p>
+</blockquote>
+<blockquote>
+<p>人一百度会死</p>
+</blockquote>
+<blockquote>
+<p>电脑一百度主板会坏</p>
+</blockquote>
+<p>如法炮制，修好了另一个电脑，一看表快6点了</p>
+<p>收工，准备去买清洁用品</p>
+<p>我们跋涉1点几公里，买了200块钱的清洁用品和2大桶水</p>
+<p>清洁了一晚上，睡觉还失眠了，因为总有大车呼啸而过</p>
+<p>刚刚接到通知，后天晚上开题，我艹。。</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月6日实习日记</title>
+    <url>/2022/09/08/9%E6%9C%886%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>让我回忆一下</p>
+<p>来到开中的第二天，早上吃了早饭，好便宜</p>
+<p>来到网络中心，打开电脑打算看看文献，突然接到微信</p>
+<p>陈老师说后天开题</p>
+<p>我人麻了😓</p>
+<p>赶紧看文献，写开题报告，当然还得继续修电脑</p>
+<p>后面有点忘了，就这样吧</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月7日实习日记</title>
+    <url>/2022/09/08/9%E6%9C%887%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>昨天晚上拿电脑回到宿舍，也没写多少就睡觉了</p>
+<p>明天就要开题了，我还没准备好呢，同学也一直催我让我动笔写，不要光看</p>
+<p>我倒是想写，但是我感觉自己没啥可写的，可真是难受</p>
+<p>下午给魏老师换了个网线头，换了半天可算好了</p>
+<p>又和李老师和关老师去了创客实验室，别说，确实东西挺多的</p>
+<p>同学也开始学编程猫和arduino了</p>
+<p>我也有了一点压力</p>
+<p>不只是开题，还有。。。</p>
+<p>晚上我们收拾了一下坐车回学校了</p>
+<p>今晚注定无眠</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月8日实习日记</title>
+    <url>/2022/09/08/9%E6%9C%888%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>今天没实习，回学校了</p>
+<p>昨晚我本来想通宵搞开题报告，可惜效率太低了</p>
+<p>半夜12点了都没写多少东西</p>
+<p>但是昨天坐车我又困又累</p>
+<p>我把电脑拿到床上，坐在那里，结果不一会就困了，我躺在电脑旁边想小憩一会</p>
+<p>结果睡着了</p>
+<p>别说，压力之下睡得真香，一点都不失眠</p>
+<p>人，真奇怪</p>
+<p>早上8点才起来，又很困，定了10几个闹钟，还是困</p>
+<p>10点，终于起来了</p>
+<p>CTRL C + CTRL V</p>
+<p>到了晚上6点半，终于把ppt做完了，word还是没搞完</p>
+<p>————————————————</p>
+<p>晚上8点，开题完毕，心里还是没怎么放松下来</p>
+<p>不过确实长舒了一口气</p>
+<p>脑袋也清晰了一点</p>
+<p>我喜欢大脑清晰的感觉</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9月9日实习日记</title>
+    <url>/2022/09/10/9%E6%9C%889%E6%97%A5%E5%AE%9E%E4%B9%A0%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>昨天早上不到7点就醒了，不过还是赖床了，7点才起</p>
+<p>起来以后洗漱完毕就跟同学去坐车了</p>
+<p>我发现坐这种长达一个半小时的公交车，确实没什么意思</p>
+<p>我一没带耳机，二没玩手机</p>
+<p>所以全程我基本就是在假寐，或者说冥想？</p>
+<p>冥想过后确实思维更清晰了一些</p>
+<p>不过我想以后还是少通勤吧</p>
+<p>白天也没做什么，因为只睡了6小时，很困</p>
+<p>上午研究了一下mind+控制舵机</p>
+<p>下午帮财务老师搞了一下excel表格的问题，编号过长下拉不递增的问题</p>
+<p>使用=A1&amp;B1可以解决，原始单元格调成文本，目标单元格调成数值</p>
+<p>无奈财务系统平台太烂了，没搞定</p>
+<p>晚上坐了近俩小时的车回到学校，跟室友一起吃饭</p>
+<p>吃完回宿舍，我感到浑身酸痛</p>
+<p>简单洗漱了以后，我下载了《三体》</p>
+<p>看了一会就睡着了</p>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python学习笔记</title>
+    <url>/2022/08/05/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="嵩天-《python语言设计》"><strong>嵩天 《python语言设计》</strong></h2>
+<h1><u>==第一周==</u></h1>
+<h2 id="font-color-DarkYellow-8月5日-20-54-font"><font color=DarkYellow><strong>8月5日 20:54</strong></font></h2>
+<p>1.编译和解释</p>
+<p>编译是一次性执行全部源代码，后续不再需要源代码，时间久远会有源代码丢失的情况</p>
+<p>解释是逐条执行源代码，因此一直需要源代码，更便于维护</p>
+<p>2.程序的基本编写方法IPO</p>
+<p>Input Process Output</p>
+<p>输入是程序的开始</p>
+<p>输出是程序展示运算结果的方式，如果没有输出程序是没有意义的</p>
+<p>处理方法统称<strong>算法</strong>，是程序最重要的部分，也是程序的灵魂</p>
+<p>3.编程解决问题的步骤（6步骤）</p>
+<p>分析问题：分析问题的计算部分</p>
+<p>划分边界：划分问题的功能边界，规划IPO</p>
+<p>设计算法：设计问题求解的算法，关注问题本身</p>
+<p>编写程序：编程</p>
+<p>调试测试：调试程序使其正确运行</p>
+<p>升级维护：更新完善</p>
+<p><strong>精简步骤（3步）</strong></p>
+<p>确定IPO：明确计算部分和功能边界</p>
+<p>编写程序：将计算求解的设计变成现实</p>
+<p>调试程序：确保程序按照正确逻辑能够正确运行</p>
+<p>4.为什么要学习编程？</p>
+<p><strong>编程能够训练思维</strong></p>
+<p>①体现了一种抽象的交互关系、自动化执行的思维模式</p>
+<p>②计算思维：区别数学的逻辑思维和物理的实证思维的第三种思维模式</p>
+<p>③促进人类思考，增进观察力和深化对交互关系的理解</p>
+<p><strong>编程能够增进认识</strong></p>
+<p>①不单纯是求解计算问题</p>
+<p>②</p>
+<p><strong>编程能够带来乐趣</strong></p>
+<p><strong>编程能够提高效率</strong></p>
+<p><strong>编程可以带来就业机会</strong></p>
+<p>5.学习编程的误区</p>
+<p>编程很难学吗？掌握方法就很容易！</p>
+<p>首先，掌握编程语言的语法，熟悉基本概念和逻辑</p>
+<p>其次，结合计算问题思考程序结构，会使用编程套路</p>
+<p>最后，参照案例多练习多实践，学会举一反三</p>
+<p>6.python的两种编程方式</p>
+<p>交互式：通过IDLE（Integrated Development and Learning Environment）对每个输入语句即时运行结果，适合语法练习</p>
+<p>文件式：批量执行一组语句并运行结果，是编程的主要方式</p>
+<p>6.示例1：温度转换</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#TempConvert.py</span><br><span class="line">TempStr = input(&quot;请输入带有符号的温度值：&quot;)</span><br><span class="line">if TempStr[-1] in [&#x27;F&#x27;,&#x27;f&#x27;]:</span><br><span class="line">    C = (eval(TempStr[0:-1])-32)/1.8</span><br><span class="line">    print(&quot;转换后的温度是&#123;:.2f&#125;C&quot;.format(C))</span><br><span class="line">elif TempStr[-1] in [&#x27;C&#x27;,&#x27;c&#x27;]:</span><br><span class="line">    F = 1.8*eval(TempStr[0:-1])+32</span><br><span class="line">    print(&quot;转换后的温度是&#123;:.2f&#125;F&quot;.format(F))</span><br><span class="line">else:</span><br><span class="line">    print(&quot;输入格式错误&quot;)</span><br></pre></td></tr></table></figure>
+<p>①<strong>缩进</strong></p>
+<p>严格明确：缩进是语法的一部分，缩进不正确程序运行错误</p>
+<p>所属关系：表达代码间包含和层次关系的<strong>唯一</strong>手段</p>
+<p>长度一致：程序内一致即可，一般用4个空格或1个TAB，缩进长度需要一致</p>
+<p>②注释</p>
+<p>不被执行，提高程序可读性</p>
+<p>单行注释：#</p>
+<p>多行注释：‘’’    ‘’’</p>
+<p>③<strong>命名与保留字</strong></p>
+<p>变量：程序中用于保存和表示数据的占位符号，采用标识符来表示</p>
+<p>TempStr是变量名字</p>
+<p>命名：关联标识符的过程</p>
+<p>命名规则：大小写字母、数字、下划线和汉字等字符及组合</p>
+<p>**注意事项：**大小写敏感，首字符不能是数字，不能与保留字相同</p>
+<p>保留字：被编程语言定义并保留使用的标识符，python共33个保留字</p>
+<h2 id="font-color-DarkYellow-8月7日-9-43更新-font"><font color=DarkYellow><strong>8月7日 9:43更新</strong></font></h2>
+<p>④<strong>数据类型</strong></p>
+<p>程序设计语言不允许存在语法歧义，需要定义数据的形式，如给10,011,101关联一种计算机可以理解的形式</p>
+<p>程序设计语言通过一定方式向计算机表达数据的形式，如&quot;123&quot;表示文本字符串123，123则表示数字123</p>
+<p>1）字符串：用“”或者‘’都可以</p>
+<p>字符串的序号：正向递增序号（从0开始），反向递减序号（最大是-1）</p>
+<p>字符串的使用：</p>
+<p>​		索引：返回字符串中单个字符，形式是&lt;字符串&gt;[M]</p>
+<p>​		e.g. “请输入带有符号的温度值：”[0]或者TempStr[-1]</p>
+<p>​		切片：返回字符串中的一段字符子串，形式是&lt;字符串&gt;[M:N]</p>
+<p>​		e.g. “请输入带有符号的温度值：”[1:3]或者TempStr[-1]，不包含后面的</p>
+<p>2）数字类型：整数对应数学中的整数，浮点数对应实数（带有小数部分）</p>
+<p>3）列表：使用[]表示，用逗号,分隔各元素</p>
+<p>使用保留字in判断一个元素是否再列表中</p>
+<p>e.g. TempStr[-1] in [‘C’,‘c’] 判断前者是否与列表中的某个元素相同，相同则返回True</p>
+<p>⑤语句和函数：赋值语句，分支语句</p>
+<p>赋值语句：给变量赋予新的数据值，<strong>右侧的数据类型同时作用于变量</strong></p>
+<p>分支语句：如if TempStr[-1] in [‘F’,‘f’]: #如果条件为True则执行冒号后语句</p>
+<p><em><strong>注意：</strong></em>:的作用是如果中间的条件成立，那么则执行冒号后带有缩进的语句，反之跳过缩进的语句</p>
+<p>**函数：**根据输入参数产生不同输出的功能过程，采用<font color=Red>&lt;函数名&gt;(&lt;参数&gt;)</font>方式使用</p>
+<p>e.g. eval(TempStr[0:-1]) #TempStr[0:-1]是参数</p>
+<p><font color=Blue>eval()函数</font>，也叫评估函数，可以去掉参数最外侧引号并执行余下语句</p>
+<p>eval(&lt;字符串或字符串变量&gt;)</p>
+<p>e.g. eval(“1”) #输出结果是1  eval(“1+2”) #输出结果是3  eval(‘“1”’) #输出结果是‘1’</p>
+<p>eval('print(“Hello”) ') #输出结果是Hello</p>
+<p>⑥输入输出</p>
+<p>输入函数input()，格式&lt;变量&gt; = input(&lt;提示信息字符串&gt;)</p>
+<p>用户输入的信息以字符串类型保存在&lt;变量&gt;中</p>
+<p>输出函数print()，格式print(&lt;拟输出字符串或字符串变量&gt;)</p>
+<p>此外，print函数的<font color=Red>格式化</font>：</p>
+<p>e.g. print(“转换后的温度是{:.2f}C”.format©)</p>
+<p>{}表示槽，后续变量填充到槽中，{:.2f}表示将变量C填充到这个位置时取小数点后2位</p>
+<p><font color=Red><strong>考试</strong></font></p>
+<p>第一周的内容学完之后我就开始自己练习，事实证明我的计算思维还真是差了一点，把python123的练习的弄的差不多了，我就开始考试了，信心满满</p>
+<p><img src="https://s1.ax1x.com/2022/08/05/vnDFIK.jpg" alt="先插入一张图片试试"></p>
+<p>考试内容是10道选择题和2道编程题，我本以为1小时绰绰有余，结果还是高估了自己</p>
+<p>第一道题是**Hello World的条件输出 **</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">要求：</span><br><span class="line"></span><br><span class="line">获得用户输入的一个整数，参考该整数值，打印输出&quot;Hello World&quot;，要求：‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">如果输入值是0，直接输出&quot;Hello World&quot;‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">如果输入值大于0，以两个字符一行方式输出&quot;Hello World&quot;（空格也是字符）‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">如果输入值小于0，以垂直方式输出&quot;Hello World&quot;</span><br></pre></td></tr></table></figure>
+<p>两个字符一行确实难住我了，求教CSDN才懂，不过也确实学到了点东西，下面是我写的程序</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">num = input()</span><br><span class="line">str = &quot;Hello World&quot;</span><br><span class="line">length = len(str)</span><br><span class="line">if eval(num) == 0:</span><br><span class="line">    print(str)</span><br><span class="line">elif eval(num) &gt; 0:</span><br><span class="line">    for i in range(0,length,2):</span><br><span class="line">        print(str[i:i+2])</span><br><span class="line">else:</span><br><span class="line">    for i in str:</span><br><span class="line">       print(i)</span><br></pre></td></tr></table></figure>
+<p>这里用了一个len函数来求字符串的长度，然后用循环语句2个2个输出，确实挺高效的</p>
+<p>而老师给的代码就显得有点简单粗暴了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">n = eval(input())</span><br><span class="line">if n == 0:</span><br><span class="line">    print(&quot;Hello World&quot;)</span><br><span class="line">elif n &gt; 0:</span><br><span class="line">    print(&quot;He\nll\no \nWo\nrl\nd&quot;)</span><br><span class="line">else:</span><br><span class="line">    for c in &quot;Hello World&quot;:</span><br><span class="line">        print(c)</span><br></pre></td></tr></table></figure>
+<p>第二道题是<strong>数值运算</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获得用户输入的一个字符串，格式如下：‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">M OP N‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">其中，M和N是任何数字，OP代表一种操作，表示为如下四种：+, -, *, /（加减乘除）‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">根据OP，输出M OP N的运算结果，统一保存小数点后2位。‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬</span><br><span class="line"></span><br><span class="line">注意：M和OP、OP和N之间可以存在多个空格，不考虑输入错误情况。</span><br></pre></td></tr></table></figure>
+<p>说实话，这可给我难住了，我想了半天，搜索了半天也没啥想法，于是就想求助ZY，可惜考试时间到了他才回复，剩最后2分钟我突发奇想，一顿操作，还是不行，好在加法能工作，先贴上来，以后再看吧</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">str = input()</span><br><span class="line">if &quot;+&quot; in str:</span><br><span class="line">    a = str.index(&quot;+&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:a])+eval(str[a:])))</span><br><span class="line">elif &quot;-&quot; in str:</span><br><span class="line">    b = str.index(&quot;-&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:b])-eval(str[b:])))</span><br><span class="line">elif &quot;*&quot; in str:</span><br><span class="line">    c = str.index(&quot;*&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:c])*eval(str[c:])))</span><br><span class="line">else:</span><br><span class="line">    d = str.index(&quot;/&quot;)</span><br><span class="line">    print(&quot;&#123;:.2f&#125;&quot;.format(eval(str[:d])/eval(str[d:])))</span><br></pre></td></tr></table></figure>
+<p>吃饭的时候我都还在想这个问题，回来看了一眼答案</p>
+<p><font color=Red><strong>我人傻了</strong></font></p>
+<p>答案就2行😅😅😅</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s = input()</span><br><span class="line">print(&quot;&#123;:.2f&#125;&quot;.format(eval(s)))</span><br></pre></td></tr></table></figure>
+<p>老师还加了一句，“<strong>体会eval()函数的作用，在编程中用处很大。</strong>”</p>
+<p>现在确实体会到了，作用确实很大。。。</p>
+<p>今天先这样，明天继续</p>
+<h1><u>==第二周==</u></h1>
+<p>复习了一下第一周的课，我理解的更深刻了一些，果然人类的本质就是复读机，只有不断重复才能做得更好</p>
+<blockquote>
+<p><font color=darkblue><em><strong>Practice makes perfect</strong></em></font></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#温度转换</span><br><span class="line">T=input()</span><br><span class="line">if T[-1] in (&#x27;f&#x27;,&#x27;F&#x27;):</span><br><span class="line">    print(&#x27;&#123;:.2f&#125;C&#x27;.format((eval(T[0:-1])-32)/1.8))</span><br><span class="line">elif T[-1] in (&#x27;c&#x27;,&#x27;C&#x27;):</span><br><span class="line">    print(&#x27;&#123;:.2f&#125;F&#x27;.format(eval(T[0:-1])*1.8+32))</span><br><span class="line">else:</span><br><span class="line">    print(&quot;格式有误&quot;)</span><br></pre></td></tr></table></figure>
+<p>我深入理解了一下{:.2f}的意思，首先必须放在引号里，相当于字符串，f是float，2f就是2位小数，.format()就是把()里的东西格式化成{:.2f}，因此像我这次写的格式也是可以的。注意字符串切片用:，eval的作用是去一层引号</p>
+<p>1.利用turtle库绘制蟒蛇</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#PythonDraw.py</span><br><span class="line">import turtle</span><br><span class="line">turtle.setup(650,350,200,200)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.fd(-250)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.pensize(25)</span><br><span class="line">turtle.pencolor(&#x27;purple&#x27;)</span><br><span class="line">turtle.seth(-40)</span><br><span class="line">for i in range(4):</span><br><span class="line">​	turtle.circle(40,80)</span><br><span class="line">​	turtle.circle(-40,80)</span><br><span class="line">turtle.circle(40,80/2)</span><br><span class="line">turtle.fd(40)</span><br><span class="line">turtle.circle(16,180)</span><br><span class="line">turtle.fd(40*2/3)</span><br><span class="line">turtle.done()</span><br></pre></td></tr></table></figure>
+<p>标准库与第三方库，标准库随解释器直接安装，而第三方库需要用户手动安装</p>
+<p>库library 包package 模块module</p>
+<p>2.turtle库的函数</p>
+<p>①窗体布局</p>
+<p>setup函数，<font color=orange>setup(width,height,startx,starty)</font>，后两个参数是可选的，未指定默认窗口在屏幕中心</p>
+<p>②空间坐标体系</p>
+<p><font color=red>绝对坐标：</font>以海龟为中心，参考平面直角坐标系，常用函数<font color=orange>goto(x,y)</font></p>
+<p><font color=darkred>海龟坐标</font>：以海龟为第一视角，常用函数fd(d)<font color=green>意思是forward</font>，bk(d)<font color=green>意思是backward</font></p>
+<p><font color=orange>circle(r,angle)</font>是以海龟左侧某个点为圆心绘制曲线，想起了<font color=green>曲率</font>。。</p>
+<p>③角度坐标体系</p>
+<p><font color=red>绝对角度：</font>以海龟为中心，参考平面直角坐标系，常用函数<font color=orange>seth(angle)</font>，注：<font color=green>seth只改变方向不行进</font></p>
+<p><font color=darkred>海龟角度：</font>以海龟为第一视角，常用函数<font color=orange>left(angle)</font>，<font color=orange>right(angle)</font></p>
+<p>④RGB色彩模式</p>
+<p>默认采用小数值，可切换为整数值</p>
+<p><font color=orange>colormode(mode)</font>，colormode(1.0)表示小数值，colormode(255)表示整数值</p>
+<p>⑤画笔控制函数</p>
+<p><font color=orange>penup()</font>别名pu，抬起画笔</p>
+<p><font color=orange>pendown()</font>别名pd，落下画笔</p>
+<p><font color=orange>pensize(width)</font>别名width(width)，画笔宽度</p>
+<p><font color=orange>pencolor()</font>画笔颜色，有三种形式</p>
+<p>1)颜色字符串，注意小写，如turtle.pencolor(‘purple’)</p>
+<p>2)RGB小数值，如turtle.pencolor(0.63,0.13,0.94)</p>
+<p>3)RGB<font color=red>元组</font>值，如turtle.pencolor((0.63,0.13,0.94))</p>
+<p>⑥运动控制函数</p>
+<p><font color=orange>forward(d)</font>别名fd，d表示行进距离，单位是像素</p>
+<p><font color=orange>circle(r,extent=None)</font>，默认圆心在海龟<font color=red>左侧</font>距离为r的地方，不指定extent（<font color=red>角度</font>）默认绘制整圆</p>
+<p>注：若r为负值则向<font color=red>右侧</font>绘制圆</p>
+<p>⑦方向控制函数<font color=orange></font></p>
+<p><font color=orange>setheading(angle)</font>别名seth()，<font color=orange>left()</font>，<font color=orange>right()</font></p>
+<p>3.<strong><font color=red>库引用import的使用</font></strong></p>
+<p>①<font color=red>&lt;库名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)</font></p>
+<p>②每次都写库名很麻烦，可以<font color=red>from&lt;库名&gt;import&lt;函数名&gt;或者import*</font>，这样不需要每次都写库名了</p>
+<p><strong><font color=red>比较</font></strong></p>
+<p>方法①不会重名，方法②可能会（与自定义函数）重名</p>
+<p>③<font color=red>import&lt;库名&gt;as&lt;库别名&gt;</font>（小名）<strong><font color=lightblue>这个方法最好</font></strong></p>
+<p>4.<strong><font color=red>循环语句</font></strong></p>
+<p>for &lt;变量&gt; in range (&lt;参数&gt;)  参数就是循环的次数，变量表示循环计数（从0开始）</p>
+<p>​			&lt;被循环执行的语句&gt;</p>
+<p>range(M,N)，从M到N-1，产生N-M个整数</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(5):</span><br><span class="line">	print(&#x27;t&#x27;,i)</span><br></pre></td></tr></table></figure>
+<p>输出结果在t和i之间有空格</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">插入一个turtle常用指令的网站</span><br><span class="line">[10分钟轻松学会 Python turtle 绘图 - nowgood - 博客园 (cnblogs.com)](https://www.cnblogs.com/nowgood/p/turtle.html)</span><br></pre></td></tr></table></figure>
+<h1><u>==第三周==</u></h1>
+<p>本周讲解基本数据类型</p>
+<p>1.整数类型</p>
+<p><strong>无范围限制</strong>，4种进制表示形式</p>
+<p>①十进制</p>
+<p>②二进制 以0B或0b开头，如0b101</p>
+<p>③八进制 以0O或0o开头，如-0o456</p>
+<p>④十六进制 以0X或0x开头，如-0x9a</p>
+<p>2.浮点数类型</p>
+<p><strong>有范围限制</strong>，可忽略</p>
+<p><font color=dark>浮点数运算存在不确定尾数，不是bug，是由于十进制和二进制不是完全对应引起的，如0.1会对应无限循环的二进制数</font>，于是就会出现这种情况</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0.1+0.2==0.3</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+<p>此时可以使用<font color=orange>round(x,d)</font>函数，对x四舍五入，d是小数截取位数</p>
+<p>科学计数法：<font color=orange><a>e<b></font>表示a*10<sup>b</sup></p>
+<p>3.复数（python独有）</p>
+<p>虚数单位用**<font color=darkblue>j</font>**来表示，z.real表示实部，z.imag表示虚部</p>
+<p>4.数值运算操作符</p>
+<p>基本操作符：+，-，*，/，//，%，**</p>
+<p>二元操作符的增强操作符：x <font color=dark>op</font> y 其中，op为二元操作符</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x += y 	x -= y	x *= y	x /= y	x //= y	x %= y	x **= y</span><br></pre></td></tr></table></figure>
+<p><strong>混合运算会生成“最宽”的数据类型</strong></p>
+<p>5.数值运算函数</p>
+<p><font color=orange>abs(x)</font>对x取绝对值</p>
+<p><font color=orange>divmod(x,y)</font>商余，即同时输出商和余数(x//y,x%y)</p>
+<p><font color=orange>pow(x,y[,z])</font>幂余，(x**y)%z，函数中的[]表示可省略，<font color=dark>作用：计算更迅速</font></p>
+<p><font color=orange>round(x[,d])</font>默认取整</p>
+<p><font color=orange>max(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)</font></p>
+<p><font color=orange>min(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)</font></p>
+<p>数值转换函数</p>
+<p><font color=orange>int(x)</font></p>
+<p><font color=orange>float</font></p>
+<p><font color=orange>complex</font>，注：（）里是字符串也可</p>
+<p>例子：天天向上的力量</p>
+<blockquote>
+<p><strong><font color=darkblue>计算思维是抽象和自动化相结合的结果</font></strong></p>
+<p><strong><font color=darkblue>其中抽象是指抽象一个问题的形式化逻辑，自动化是指将抽象的结果通过程序自动完成</font></strong></p>
+</blockquote>
+<p>6.字符串类型及操作</p>
+<p>2类共4种表示方法，<strong>注：多行字符串用’''或&quot;&quot;&quot;括起来，可以当作注释</strong></p>
+<p>作用：使得字符串中可以出现’和&quot;，<strong>聪明的设计</strong></p>
+<p>序号：正向递增或反向递减</p>
+<p>①索引 格式：&lt;字符串&gt;[M]</p>
+<p>②切片 格式：&lt;字符串&gt;[M:N]</p>
+<p><font color=dark>高级用法：</font>&lt;字符串&gt;[M:N]，M缺失表示至开头，N缺失表示至结尾</p>
+<p>如：“〇一二三四五六七八九十”[:3]结果是&quot;〇一二&quot;</p>
+<p>&lt;字符串&gt;[M:N:K]，以K为步长进行切片</p>
+<p>如：“〇一二三四五六七八九十”[1:8:2]结果是&quot;一三五七&quot;</p>
+<p>字符串逆序，用[::-1]来实现</p>
+<p>如：“〇一二三四五六七八九十”[::-1]结果是&quot;十九八七六五四三二一〇”</p>
+<p><font color=dark>转义符\反斜杠：</font>表达特定字符的本意</p>
+<p>常用的\b回退（一个位置），\r回车（光标移至本行首），\n换行（光标移至下行首）</p>
+<p>7.字符串操作符</p>
+<p>x + y 连接两个字符串</p>
+<p>n * x或x * n 复制n次字符串x</p>
+<p>x in s 如果x是s的子串，返回True，否则返回False</p>
+<p>8.字符串处理函数</p>
+<p><font color=orange>len(x)</font>，<font color=orange>str(x)</font>与eval(x)对应，<font color=orange>hex(x)</font>形成16进制字符串，<font color=orange>oct(x)</font>形成8进制字符串</p>
+<p><font color=orange>chr(u)</font>，u为Unicode编码，返回其对应的字符，<font color=orange>ord(x)</font>，x为字符，返回其对应的Unicode编码</p>
+<p>print函数中<font color=orange>end</font>的用法，end=&quot;&quot;引号为空，则输出后不换行，默认换行</p>
+<p>8.<font color=red>字符串处理方法</font></p>
+<p><font color=purple>”方法“在编程中是一个专有名词，特指<a>.<b>()风格中的函数<b>()</font>是面向对象编程中的特有方法</p>
+<p>①一些以方法形式提供的字符串处理功能</p>
+<p><font color=orange>str.lower()</font>或<font color=orange>str.upper()</font>，返回字符串副本，全部小写/大写</p>
+<p><font color=orange>str.split(sep=None)</font>，返回一个列表，由str根据sep被分隔的部分组成<br>
+如：“A,B,C”.split(“,”)结果为[‘A’,‘B’,‘C’]，即用,分割字符串形成列表</p>
+<p><font color=orange>str.count(sub)</font>，返回子串sub在str中出现的次数</p>
+<p><font color=orange>str.replace(old,new)</font>，返回字符串str副本，所有old子串被替换为new<br>
+如：“python”.replace(“n”,“<a href="http://n123.io">n123.io</a>”)结果为&quot;<a href="http://python123.io">python123.io</a>&quot;</p>
+<p><font color=orange>str.center(width[,fillchar])</font>，字符串str根据宽度width居中，fillchar可选<br>
+如：“python”.center(20,“=”)结果为=======python=======，左右各7个=</p>
+<p><font color=orange>str.strip(chars)</font>，从str中去掉在其左侧和右侧chars中列出的字符<br>
+如：“=python=”.strip(“=npo”)结果为&quot;yth&quot;</p>
+<p><font color=orange>str.join(iter)</font>，在iter变量除最后元素外每个元素后增加一个str</p>
+<p>如：“,”.join(“12345”)结果为&quot;1,2,3,4,5&quot;，<strong>主要用于字符串分隔等</strong></p>
+<p>9.<font color=red>字符串类型的格式化</font></p>
+<p>使用<font color=orange>.format()方法</font>，<font color=orange>&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</font></p>
+<p>**<font color=purple>槽</font>**相当于一个占位信息符，使用{}来表示，<strong>只在字符串中有用</strong></p>
+<p>槽内部对格式化的配置方式：{&lt;参数序号&gt;:&lt;格式控制标记&gt;}</p>
+<p><strong>引导符号是”:“</strong>，6种格式控制标记分别是</p>
+<blockquote>
+<p><font color=dark>1)&lt;填充&gt;  2)&lt;对齐&gt;，&lt;左对齐，&gt;右对齐，^居中  3)&lt;宽度&gt;，槽设定的输出宽度</font></p>
+<p><font color=dark>4)&lt;,&gt;，数字的千位分隔符  5)&lt;.精度&gt;，浮点数小数精度或字符串最大输出长度</font></p>
+<p><font color=dark>6)&lt;类型&gt;，整数类型b,c,d,o,x,X,浮点数类型e,E,f,%</font></p>
+</blockquote>
+<blockquote>
+<p><strong><font color=darkblue>填充、对齐、宽度3个一组</font></strong></p>
+<p>eg：“{0:=^20}”.format(“python”) #0可省略</p>
+<p>结果：=======python=======</p>
+</blockquote>
+<blockquote>
+<p><strong><font color=darkblue>后3个为一组，都和数字有关</font></strong></p>
+<p>eg1：“{:,.2f}”.format(12345.6789)</p>
+<p>结果：12,345.68 #只分隔整数部分</p>
+<p>eg2：“{0:b},{0:c},{0:d},{0:o},{0:x},{0:X}”.format(425)</p>
+<p>结果：110101001,Ʃ,425,651,1a9,1A9</p>
+<p>eg3：“{0:e},{0:E},{0:f},{0:%}”.format(3.14)</p>
+<p>结果：3.140000e+00,3.140000E+00,3.140000,314.000000%</p>
+</blockquote>
+<p>10.time库的使用</p>
+<p>time库包含3类函数，分别是</p>
+<p>时间获取<font color=orange>time()</font>，获取时间戳。<font color=orange>ctime()</font>，获取字符串形式的当前时间。<font color=orange>gmtime()</font>，其他程序可利用的格式。</p>
+<p>时间格式化<font color=orange>strftime(tpl,ts)</font>，<font color=orange>strptime(str,tpl)</font>，两个函数是<font color=dark>互补</font>的关系</p>
+<p>eg1：time.strftime(“%Y-%m-%d %H:%M:%S”,time.gmtime())   结果：2022-10-05 07:24:20</p>
+<p>eg2：</p>
+<p><strong>格式化字符串：</strong>%Y年；%m月份；%B月份名称；%b月份名称缩写；%d日期；%A星期；%a星期缩写； %H24小时制；%I12小时制；%p上午下午；%M分钟；%S秒。</p>
+<p>程序计时<font color=orange>sleep()</font>，产生时间，可用于程序休眠。</p>
+<p><font color=orange>perf_counter()</font>，测量时间但是起点不确定，连续调用，计算差值才有意义</p>
+<h1><u>==第四周==</u></h1>
+<p>程序的控制结构分为三种，分别是顺序结构、分支结构和循环结构</p>
+<p>1.分支结构</p>
+<p>①单分支结构，if “如果，则”</p>
+<p>②二分支结构，if else</p>
+<p>二分支的紧凑形式，&lt;表达式1&gt; if &lt;条件&gt; else &lt;表达式2&gt;</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">eg：guess eval(input())</span><br><span class="line">        print(&quot;猜&#123;&#125;了&quot;.format(&quot;对&quot; if guess==99 else &quot;错&quot;))</span><br></pre></td></tr></table></figure>
+<p>注：二分支紧凑形式仅支持表达式，不支持带赋值符号的形式</p>
+<p>③多分支结构，if elif else</p>
+<p>注意：1）多条件之间的包含关系  2）变量取值范围的覆盖</p>
+<p>④条件判断及组合</p>
+<p>⑤异常处理</p>
+<p>基本用法：<font color=orange>try…except</font></p>
+<p>高级用法：<font color=orange>try&lt;语句块1&gt;except&lt;语句块2&gt;else&lt;语句块3&gt;finally&lt;语句块4&gt;</font></p>
+<p>首先执行try后的语句，若异常执行except；若不异常执行else，最后执行finally</p>
+<p>总结：</p>
+<p><font color=red>1)多分支条件之间的覆盖是重要问题 </font></p>
+<p><font color=red>2)程序可运行但不正确，要注意多分支<br>
+</font></p>
+<p><font color=red>3)分支结构是程序的重要框架，读程序先看分支</font></p>
+<p>2.循环结构</p>
+<p>遍历循环for，无限循环while</p>
+<p>①遍历循环</p>
+<p>计数循环for in range 字符串循环for c in s 列表遍历循环for item in ls 文件遍历循环for line in fi(fi是文件标识符)</p>
+<p>②无限（条件）循环</p>
+<p>③循环控制保留字<font color=orange></font></p>
+<p><font color=orange>break</font>跳出并结束循环，执行循环后面的语句</p>
+<p><font color=orange>continue</font>结束当此循环，执行后续循环</p>
+<p>④循环的高级用法</p>
+<p>在循环后加else语句，在循环不被break的情况下执行，若被break则不执行</p>
+<p>3.random库</p>
+<p>random库是python的标准库</p>
+<p>伪随机数：采用梅森旋转算法产生随机序列</p>
+<p>基本随机数函数：seed()，random()<br>
+扩展随机数函数：randint()，getrandbits()，uniform()，randrange()，choice()，shuffle()</p>
+<h1>==<u>第五周</u>==</h1>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拍月亮</title>
+    <url>/2022/10/04/%E6%8B%8D%E6%9C%88%E4%BA%AE/</url>
+    <content><![CDATA[<p>//首页文章展示缩略图<br>
+<img src="https://" alt="" style="width:100%" /></p>
+<p>拍了好多次月亮了，总结一下拍月亮的方法</p>
+<blockquote>
+<p><strong><font color=darkblue>“工欲善其事必先利其器”</font></strong></p>
+</blockquote>
+<blockquote>
+<p>1.长焦镜头 最好大于200mm</p>
+<p>2.三脚架和快门线</p>
+<p>3.相机参数 M档，快门1/125s，F8-F16，低ISO(100)，点测光，EV减1或2</p>
+<p>4.前景 选择合适的前景能让画面更有意境</p>
+<p>5.天气晴朗无云</p>
+</blockquote>
+<span id="more"></span>
+<hr />
+版权信息
+]]></content>
+      <categories>
+        <category>摄影</category>
+      </categories>
+      <tags>
+        <tag>摄影</tag>
       </tags>
   </entry>
 </search>
